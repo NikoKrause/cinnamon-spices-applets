@@ -1,0 +1,8 @@
+{
+    "name": "Desktop Capture",
+    "uuid": "capture@NikoKrause",
+    "description": "Screenshot and screencasting tools",
+    "multiversion": true,
+    "hide-configuration": false,
+    "version": "1.0"
+}
