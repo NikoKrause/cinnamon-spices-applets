@@ -7,20 +7,15 @@
          "title" : "General",
          "sections" : ["screenshot-general", "recorder-general", "appearance"]
       },
-      "tool-selection" : {
-         "type" : "section",
-         "title" : "Capture Tool Selection",
-         "keys" : ["camera-program", "recorder-program"]
-      },
       "screenshot-general": {
          "type": "section",
          "title": "Screenshots",
-         "keys": ["camera-program", "camera-save-dir", "camera-save-prefix", "include-cursor", "use-timer", "delay-seconds", "show-capture-timer"]
+         "keys": ["camera-save-dir", "camera-save-prefix", "include-cursor", "use-timer", "delay-seconds", "show-capture-timer"]
       },
       "recorder-general": {
          "type": "section",
          "title": "Recorder",
-         "keys": ["recorder-program", "recorder-save-dir","recorder-save-prefix"]
+         "keys": ["recorder-save-dir","recorder-save-prefix"]
       },
       "appearance": {
          "type": "section",
@@ -76,35 +71,6 @@
    "general settings": {
       "type": "header",
       "description": "Capture Tool Selection"
-   },
-   "camera-program": {
-      "indent": true,
-      "default": "cinnamon",
-      "type": "combobox",
-      "options": {
-         "Cinnamon Screenshot (built-in)": "cinnamon",
-         "GNOME Screenshot": "gnome-screenshot",
-         "Shutter": "shutter",
-         "XWD": "xwd",
-         "ImageMagick": "import",
-         "Kazam": "kazam"
-      },
-      "description": "Screenshot program",
-      "tooltip": "Preferred screen capture program"
-   },
-   "recorder-program": {
-      "indent": true,
-      "default": "cinnamon",
-      "type": "combobox",
-      "options": {
-         "Cinnamon Recorder (built-in)": "cinnamon",
-         "RecordMyDesktop": "gtk-recordmydesktop",
-         "Byzanz": "byzanz",
-         "FFmpeg": "ffmpeg",
-         "Kazam": "kazam"
-      },
-      "description": "Recorder program",
-      "tooltip": "Preferred screen recorder program"
    },
    "use-symbolic-icon": {
       "default": false,
@@ -466,10 +432,5 @@
       "default": 0,
       "type": "generic",
       "description": "Last selected sub-page (tab index) of settings application"
-   },
-   "record-sound": {
-      "default": 0,
-      "type": "generic",
-      "description": "Record sound"
    }
 }

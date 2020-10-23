@@ -1,6 +1,4 @@
 {
-   "camera-program": "cinnamon", 
-   "recorder-program": "cinnamon", 
    "include-cursor": false, 
    "open-after": false, 
    "delay-seconds": 2, 
@@ -21,6 +19,5 @@
    "include-styles": false, 
    "last-selected-page": 1, 
    "last-selected-subpage": 0, 
-   "use-symbolic-icon": false, 
-   "record-sound": false
+   "use-symbolic-icon": false
 }
