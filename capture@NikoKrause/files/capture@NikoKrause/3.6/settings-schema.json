@@ -20,17 +20,12 @@
       "screenshot-builtin": {
          "type": "page",
          "title": "Cinnamon Screenshot",
-         "sections": ["screenshot-builtin-fx","screenshot-builtin-notif","screenshot-builtin-imgur","screenshot-builtin-kb","screenshot-builtin-copying","screenshot-builtin-misc"]
+         "sections": ["screenshot-builtin-fx","screenshot-builtin-notif","screenshot-builtin-kb","screenshot-builtin-copying","screenshot-builtin-misc"]
       },
       "screenshot-builtin-notif": {
          "type": "section",
          "title": "Notifications",
          "keys": ["send-notification","notif-image-left-click","notif-image-right-click","show-copy-path-action","show-copy-data-action","show-delete-action","demo-notification-button"]
-      },
-      "screenshot-builtin-imgur": {
-         "type": "section",
-         "title": "Integration: Imgur",
-         "keys": ["use-imgur","use-imgur-account","imgur-wizard-button"]
       },
       "screenshot-builtin-kb": {
          "type": "section",
@@ -329,30 +324,6 @@
    "integration with imgur": {
       "type": "header",
       "description": "Integrations: Imgur (Screenshots)"
-   },
-   "use-imgur": {
-      "indent": true,
-      "type": "switch",
-      "default": false,
-      "description": "Enable uploading from notifications",
-      "tooltip": "Whether to use imgur image hosting services",
-      "depenency": "send-notification"
-   },
-   "use-imgur-account": {
-      "indent": true,
-      "type": "switch",
-      "default": false,
-      "description": "Upload to your own account (instead of anonymously)",
-      "tooltip": "If unchecked, uploads will be anonymous and not tied to your account.",
-      "dependency": "use-imgur"
-   },
-   "imgur-wizard-button": {
-      "indent": true,
-      "type" : "button",
-      "description" : "Wizard: Connect to your account..",
-      "callback" : "on_config_integrate_imgur",
-      "tooltip" : "Pressing this button will open a configuration utility",
-      "dependency": "use-imgur-account"
    },
    "imgur-access-token": {
       "type" : "generic",

@@ -14,7 +14,6 @@
    "play-shutter-sound": true, 
    "play-timer-interval-sound": true, 
    "copy-to-clipboard": 0, 
-   "upload-to-imgur": false, 
    "send-notification": true, 
    "include-styles": false, 
    "last-selected-page": 1, 
