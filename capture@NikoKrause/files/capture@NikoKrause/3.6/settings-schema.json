@@ -10,7 +10,7 @@
       "screenshot-general": {
          "type": "section",
          "title": "Screenshots",
-         "keys": ["camera-save-dir", "camera-save-prefix", "include-cursor", "use-timer", "delay-seconds", "show-capture-timer"]
+         "keys": ["camera-save-dir", "camera-save-prefix", "use-timer", "delay-seconds"]
       },
       "recorder-general": {
          "type": "section",
@@ -85,12 +85,6 @@
       "description": "Filename format",
       "tooltip": "Don't include file extension. %TYPE is area, window, etc. E.g. %Y-%M-%D-%H%I = 2014-05-25-1848.png. Use %S for seconds, %m for milliseconds"
    },
-   "include-cursor": {
-      "default": false,
-      "type": "checkbox",
-      "description": "Include mouse cursor",
-      "tooltip": "Whether to include mouse cursor in screenshot"
-   },
    "use-timer": {
       "default": true,
       "type": "checkbox",
@@ -107,13 +101,6 @@
       "step": 1,
       "description": "Capture delay",
       "tooltip": "How many seconds to wait before taking a screenshot",
-      "dependency": "use-timer"
-   },
-   "show-capture-timer": {
-      "default": true,
-      "type": "checkbox",
-      "description": "Show capture timer",
-      "tooltip": "Whether to show the timer on the screen",
       "dependency": "use-timer"
    },
    "div2" : {

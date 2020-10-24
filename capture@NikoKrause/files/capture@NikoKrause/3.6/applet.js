@@ -534,7 +534,6 @@ MyApplet.prototype = {
     },
 
     _onSettingsChanged: function(evt, type) {
-        this._includeCursor = this.settings.getValue('include-cursor');
         this._openAfter = this.settings.getValue('open-after');
         this._delay = this.settings.getValue('delay-seconds');
         this._cameraSaveDir = this.settings.getValue('camera-save-dir');
@@ -550,7 +549,6 @@ MyApplet.prototype = {
         this._includeWindowFrame = this.settings.getValue('include-window-frame');
         this._useCameraFlash = this.settings.getValue('use-camera-flash');
         this._useTimer = this.settings.getValue('use-timer');
-        this._showTimer = this.settings.getValue('show-capture-timer');
         this._playShutterSound = this.settings.getValue('play-shutter-sound');
         this._playIntervalSound = this.settings.getValue('play-timer-interval-sound');
         this._copyToClipboard = this.settings.getValue('copy-to-clipboard');
@@ -675,7 +673,6 @@ MyApplet.prototype = {
             this._openAfter = false;
             this._delay = 0;
             this._useTimer = false;
-            this._showTimer = false;
             this._copyData = false;
             this._showCopyToggle = true;
             this._copyDataAutoOff = true;
@@ -850,7 +847,7 @@ MyApplet.prototype = {
         }
 
         // OPTION: Include Cursor (toggle switch)
-        let optionSwitch = new StubbornSwitchMenuItem(this.indent(_("Include cursor")), this._includeCursor, {
+        let optionSwitch = new PopupSwitchMenuItem(this.indent(_("Include cursor")), this._includeCursor, {
             style_class: 'bin'
         });
         optionSwitch.connect('toggled', Lang.bind(this, function(e1, v) {
@@ -1237,7 +1234,6 @@ MyApplet.prototype = {
                 windowAsArea: this._windowAsArea,
                 playShutterSound: this._playShutterSound,
                 useTimer: enableTimer,
-                showTimer: this._showTimer,
                 playTimerSound: this._playIntervalSound,
                 timerDuration: this._delay,
                 soundTimerInterval: 'dialog-warning',
