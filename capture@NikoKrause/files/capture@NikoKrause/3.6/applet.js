@@ -116,15 +116,10 @@ Source.prototype = {
     _init: function(sourceId, screenshot) {
         MessageTray.Source.prototype._init.call(this, sourceId);
         this.setTransient(false);
-        // @todo summary items
-        /*let icon_file = Gio.file_new_for_path(ICON_FILE);
-        let icon_uri = icon_file.get_uri();
-        let icon_texture = St.TextureCache.get_default().load_uri_async(icon_uri, this.ICON_SIZE, this.ICON_SIZE);
-        this._setSummaryIcon(this.createNotificationIcon());*/
     },
 
     createNotificationIcon: function() {
-        let icon_file = Gio.file_new_for_path(ICON_FILE_ACTIVE);
+        let icon_file = Gio.file_new_for_path('camera-photo-symbolic');
         let icon_uri = icon_file.get_uri();
         return St.TextureCache.get_default().load_uri_async(icon_uri, this.ICON_SIZE, this.ICON_SIZE);
     },
@@ -461,7 +456,6 @@ LocalSettings.prototype = {
     },
 
     _settingsChanged: function(monitor, fileObj, n, eventType) {
-        //global.log('LocalSettings settingsChanged');
         if (eventType !== undefined && eventType != Gio.FileMonitorEvent.CHANGES_DONE_HINT) {
             return true;
         }
@@ -703,7 +697,6 @@ MyApplet.prototype = {
         this._copyDataAutoOff = this.settings.getValue('copy-data-auto-off');
         this._sendNotification = this.settings.getValue('send-notification');
         this._includeStyles = this.settings.getValue('include-styles');
-        this._useSymbolicIcon = this.settings.getValue('use-symbolic-icon');
 
         this._notifLeftClickBehavior = this.settings.getValue('notif-image-left-click');
         this._notifRightClickBehavior = this.settings.getValue('notif-image-right-click');
@@ -839,7 +832,6 @@ MyApplet.prototype = {
             this._crFileExtension = null;
             this._crPipeline = null;
             this._redoMenuItem = null;
-            this._useSymbolicIcon = false;
             this.lastCapture = null;
             this._instanceId = instanceId;
             this._uuid = metadata.uuid;
@@ -859,11 +851,11 @@ MyApplet.prototype = {
             // settings are loaded in the event one or both the save folders
             // do not exist or are not writeable
             this.openScreenshotsFolderItem = new Applet.MenuItem(_("Open screenshots folder"),
-                'folder', Lang.bind(this, this._openScreenshotsFolder));
+                'folder-pictures', Lang.bind(this, this._openScreenshotsFolder));
             this._applet_context_menu.addMenuItem(this.openScreenshotsFolderItem);
 
             this.openRecordingsFolderItem = new Applet.MenuItem(_("Open recordings folder"),
-                'folder', Lang.bind(this, this._openRecordingsFolder));
+                'folder-videos', Lang.bind(this, this._openRecordingsFolder));
             this._applet_context_menu.addMenuItem(this.openRecordingsFolderItem);
 
             // Load up our settings
@@ -960,16 +952,11 @@ MyApplet.prototype = {
         this._contentSection = new PopupMenu.PopupMenuSection();
         this.menu.addMenuItem(this._contentSection);
 
-        // Honor user's choice between the new colored icon and the old one.
-        if (this._useSymbolicIcon == 1) {
-            this.set_applet_icon_symbolic_name("camera-photo-symbolic");
-        } else {
-            this.set_applet_icon_path(ICON_FILE);
-        }
+        this.set_applet_icon_symbolic_name('camera-photo-symbolic');
 
         this._outputTitle = new PopupMenu.PopupIconMenuItem(
             _("Camera") + ": " + _("Built-in"),
-            "camera-photo", St.IconType.SYMBOLIC, {
+            'camera-photo', St.IconType.SYMBOLIC, {
                 reactive: false
             });
 
@@ -1563,9 +1550,7 @@ MyApplet.prototype = {
             this.cRecorder.pause();
             Meta.enable_unredirect_for_screen(global.screen);
 
-            if (!this._useSymbolicIcon) {
-                this.set_applet_icon_path(ICON_FILE);
-            }
+            this._applet_icon.set_style_class_name('system-status-icon');
         } else {
             let filename;
 
@@ -1594,9 +1579,7 @@ MyApplet.prototype = {
             else
                 this.cRecorder.set_pipeline(null);
 
-            if (!this._useSymbolicIcon) {
-                this.set_applet_icon_path(ICON_FILE_ACTIVE);
-            }
+            this._applet_icon.set_style_class_name('system-status-icon error');
 
             Meta.disable_unredirect_for_screen(global.screen);
             this.cRecorder.record();
@@ -1725,15 +1708,11 @@ MyApplet.prototype = {
     },
 
     onProcessSpawned: function(pid) {
-        if (!this._useSymbolicIcon) {
-            this.set_applet_icon_path(ICON_FILE_ACTIVE);
-        }
+        this._applet_icon.set_style_class_name('system-status-icon error');
     },
 
     onProcessError: function(cmd) {
-        if (!this._useSymbolicIcon) {
-            this.set_applet_icon_path(ICON_FILE);
-        }
+        this._applet_icon.set_style_class_name('system-status-icon');
         this.Exec('zenity --info --title="Desktop Capture" --text="Command exited with error status:\n\n' +
             '<span font_desc=\'monospace 10\'>' + cmd.replace('"', '\"') + '</span>"')
     },
@@ -1741,9 +1720,7 @@ MyApplet.prototype = {
     onProcessComplete: function(status, stdout) {
         this.log("Process exited with status " + status);
 
-        if (!this._useSymbolicIcon) {
-            this.set_applet_icon_path(ICON_FILE);
-        }
+        this._applet_icon.set_style_class_name('system-status-icon');
         // @future Check status when we're able to (depends on Cinnamon)
         //this.Exec('zenity --info --title="Desktop Capture" --text="Command completed, output is:\n\n'
         //   + '<span font_desc=\'monospace 10\'>' + stdout.replace('"', '\"') + '</span>"')

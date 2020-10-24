@@ -18,6 +18,5 @@
    "send-notification": true, 
    "include-styles": false, 
    "last-selected-page": 1, 
-   "last-selected-subpage": 0, 
-   "use-symbolic-icon": false
+   "last-selected-subpage": 0
 }

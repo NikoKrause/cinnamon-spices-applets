@@ -5,7 +5,7 @@
       "general" : {
          "type" : "page",
          "title" : "General",
-         "sections" : ["screenshot-general", "recorder-general", "appearance"]
+         "sections" : ["screenshot-general", "recorder-general"]
       },
       "screenshot-general": {
          "type": "section",
@@ -16,11 +16,6 @@
          "type": "section",
          "title": "Recorder",
          "keys": ["recorder-save-dir","recorder-save-prefix"]
-      },
-      "appearance": {
-         "type": "section",
-         "title" : "Appearance",
-         "keys": ["use-symbolic-icon"]
       },
       "screenshot-builtin": {
          "type": "page",
@@ -71,12 +66,6 @@
    "general settings": {
       "type": "header",
       "description": "Capture Tool Selection"
-   },
-   "use-symbolic-icon": {
-      "default": false,
-      "type": "checkbox",
-      "description": "Use symbolic (black and white) icon for applet",
-      "tooltip": "Whether to use symbolic (black and white) icon for applet"
    },
    "div1" : {
     "type" : "separator"
