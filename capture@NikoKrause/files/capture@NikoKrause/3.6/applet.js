@@ -52,6 +52,52 @@ let ICON_FILE;
 let ICON_FILE_ACTIVE;
 let CLIPBOARD_HELPER;
 
+// We use an altered URLHighlighter because /tmp looks better than file://tmp/,
+// and I'm a picky SOB.
+function URLHighlighter(text, lineWrap, allowMarkup) {
+   this._init(text, lineWrap, allowMarkup);
+}
+URLHighlighter.prototype = {
+   __proto__: MessageTray.URLHighlighter.prototype,
+
+   _init: function(text, lineWrap, allowMarkup) {
+      MessageTray.URLHighlighter.prototype._init.call(this, text, lineWrap, allowMarkup);
+   },
+
+   // _shortenUrl doesn't exist in base class
+   _shortenUrl: function(url) {
+      if (url.substring(0, 7) == 'http://') {
+         return url.substring(7);
+      }
+      else if (url.substring(0, 7) == 'file://') {
+         return url.substring(7);
+      }
+      return url;
+   },
+
+   _highlightUrls: function() {
+        // text here contain markup
+        let urls = Util.findUrls(this._text);
+        let markup = '';
+        let pos = 0;
+        for (let i = 0; i < urls.length; i++) {
+            let url = urls[i];
+            let str = this._text.substr(pos, url.pos - pos);
+            let shortUrl = this._shortenUrl(url.url);
+
+            markup += str + '<span foreground="' + this._linkColor + '"><u>' + shortUrl + '</u></span>';
+            pos = url.pos + url.url.length;
+
+            if (shortUrl != url.url) {
+               // Save the altered match position
+               this._urls[i].pos -= url.url.length - shortUrl.length;
+            }
+        }
+        markup += this._text.substr(pos);
+        this.actor.clutter_text.set_markup(markup);
+    },
+}
+
 function Source(sourceId, screenshot) {
     this._init(sourceId, screenshot);
 }
@@ -306,6 +352,17 @@ ScreenshotNotification.prototype = {
     _onClicked: function() {
         this.emit('clicked');
     },
+
+   addBody: function(text, markup, style) {
+      if (this.bodyLabel) {
+         this.bodyLabel.actor.destroy();
+         this.bodyLabel = null;
+      }
+
+      this.bodyLabel = new URLHighlighter(text, true, markup);
+      this.addActor(this.bodyLabel.actor, style);
+      return this.bodyLabel.actor;
+   },
 }
 
 
