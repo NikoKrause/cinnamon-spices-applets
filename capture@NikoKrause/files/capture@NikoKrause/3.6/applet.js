@@ -568,10 +568,10 @@ MyApplet.prototype = {
     _registerKeyBindings: function() {
         if (this._localSettings) return;
 
+        this.registerKeyBinding('kb-cs-screen', Screenshot.SelectionType.SCREEN);
         this.registerKeyBinding('kb-cs-window', Screenshot.SelectionType.WINDOW);
         this.registerKeyBinding('kb-cs-area', Screenshot.SelectionType.AREA);
         this.registerKeyBinding('kb-cs-ui', Screenshot.SelectionType.CINNAMON);
-        this.registerKeyBinding('kb-cs-screen', Screenshot.SelectionType.SCREEN);
         this.registerKeyBinding('kb-cs-repeat', Screenshot.SelectionType.REPEAT);
 
         if (Main.layoutManager.monitors.length > 1) {
@@ -849,19 +849,18 @@ MyApplet.prototype = {
 
         this.menu.addMenuItem(this._cameraTitle);
 
-        let item = this.menu.addAction(this.indent(_("Window")), Lang.bind(this, function(e) {
+        this.menu.addAction(this.indent(_("Screen")), Lang.bind(this, function(e) {
+            return this.run_cinnamon_camera(Screenshot.SelectionType.SCREEN, e);
+        }), this.settings.getValue('kb-cs-screen'));
+        this.menu.addAction(this.indent(_("Window")), Lang.bind(this, function(e) {
             return this.run_cinnamon_camera(Screenshot.SelectionType.WINDOW, e);
         }), this.settings.getValue('kb-cs-window'));
-
         this.menu.addAction(this.indent(_("Area")), Lang.bind(this, function(e) {
             return this.run_cinnamon_camera(Screenshot.SelectionType.AREA, e);
         }), this.settings.getValue('kb-cs-area'));
         this.menu.addAction(this.indent(_("Cinnamon UI")), Lang.bind(this, function(e) {
             return this.run_cinnamon_camera(Screenshot.SelectionType.CINNAMON, e);
         }), this.settings.getValue('kb-cs-ui'));
-        this.menu.addAction(this.indent(_("Screen")), Lang.bind(this, function(e) {
-            return this.run_cinnamon_camera(Screenshot.SelectionType.SCREEN, e);
-        }), this.settings.getValue('kb-cs-screen'));
 
         if (Main.layoutManager.monitors.length > 1) {
             Main.layoutManager.monitors.forEach(function(monitor, index) {
