@@ -55,27 +55,26 @@ let CLIPBOARD_HELPER;
 // We use an altered URLHighlighter because /tmp looks better than file://tmp/,
 // and I'm a picky SOB.
 function URLHighlighter(text, lineWrap, allowMarkup) {
-   this._init(text, lineWrap, allowMarkup);
+    this._init(text, lineWrap, allowMarkup);
 }
 URLHighlighter.prototype = {
-   __proto__: MessageTray.URLHighlighter.prototype,
+    __proto__: MessageTray.URLHighlighter.prototype,
 
-   _init: function(text, lineWrap, allowMarkup) {
-      MessageTray.URLHighlighter.prototype._init.call(this, text, lineWrap, allowMarkup);
-   },
+    _init: function(text, lineWrap, allowMarkup) {
+        MessageTray.URLHighlighter.prototype._init.call(this, text, lineWrap, allowMarkup);
+    },
 
-   // _shortenUrl doesn't exist in base class
-   _shortenUrl: function(url) {
-      if (url.substring(0, 7) == 'http://') {
-         return url.substring(7);
-      }
-      else if (url.substring(0, 7) == 'file://') {
-         return url.substring(7);
-      }
-      return url;
-   },
+    // _shortenUrl doesn't exist in base class
+    _shortenUrl: function(url) {
+        if (url.substring(0, 7) == 'http://') {
+            return url.substring(7);
+        } else if (url.substring(0, 7) == 'file://') {
+            return url.substring(7);
+        }
+        return url;
+    },
 
-   _highlightUrls: function() {
+    _highlightUrls: function() {
         // text here contain markup
         let urls = Util.findUrls(this._text);
         let markup = '';
@@ -89,8 +88,8 @@ URLHighlighter.prototype = {
             pos = url.pos + url.url.length;
 
             if (shortUrl != url.url) {
-               // Save the altered match position
-               this._urls[i].pos -= url.url.length - shortUrl.length;
+                // Save the altered match position
+                this._urls[i].pos -= url.url.length - shortUrl.length;
             }
         }
         markup += this._text.substr(pos);
@@ -176,7 +175,7 @@ TimerSlider.prototype = {
 
         /* text */
         this.label = new St.Label({
-            text: _('Duration'),
+            text: _("Capture delay"),
             style_class: 'timer-slider-label'
         });
 
@@ -243,10 +242,8 @@ TimerSlider.prototype = {
     _setLabelValue: function(value) {
         if (value == 0) {
             this.valueLabel.set_text(_('Off'));
-        } else if (value == 1) {
-            this.valueLabel.set_text(value + ' ' + _('second'));
         } else {
-            this.valueLabel.set_text(value + ' ' + _('seconds'));
+            this.valueLabel.set_text(Gettext.dngettext(UUID, "%d second", "%d seconds", value).format(value));
         }
     }
 };
@@ -353,16 +350,16 @@ ScreenshotNotification.prototype = {
         this.emit('clicked');
     },
 
-   addBody: function(text, markup, style) {
-      if (this.bodyLabel) {
-         this.bodyLabel.actor.destroy();
-         this.bodyLabel = null;
-      }
+    addBody: function(text, markup, style) {
+        if (this.bodyLabel) {
+            this.bodyLabel.actor.destroy();
+            this.bodyLabel = null;
+        }
 
-      this.bodyLabel = new URLHighlighter(text, true, markup);
-      this.addActor(this.bodyLabel.actor, style);
-      return this.bodyLabel.actor;
-   },
+        this.bodyLabel = new URLHighlighter(text, true, markup);
+        this.addActor(this.bodyLabel.actor, style);
+        return this.bodyLabel.actor;
+    },
 }
 
 
@@ -591,6 +588,7 @@ MyApplet.prototype = {
     },
 
     _onSettingsChanged: function(evt, type) {
+        this._includeCursor = this.settings.getValue('include-cursor');
         this._openAfter = this.settings.getValue('open-after');
         this._delay = this.settings.getValue('delay-seconds');
         this._cameraSaveDir = this.settings.getValue('camera-save-dir');
@@ -605,7 +603,6 @@ MyApplet.prototype = {
         this._windowAsArea = this.settings.getValue('capture-window-as-area');
         this._includeWindowFrame = this.settings.getValue('include-window-frame');
         this._useCameraFlash = this.settings.getValue('use-camera-flash');
-        this._useTimer = this.settings.getValue('use-timer');
         this._playShutterSound = this.settings.getValue('play-shutter-sound');
         this._playIntervalSound = this.settings.getValue('play-timer-interval-sound');
         this._copyToClipboard = this.settings.getValue('copy-to-clipboard');
@@ -630,8 +627,6 @@ MyApplet.prototype = {
                 this.timerSlider.setValue(this._delay);
             }
         }
-
-        this._checkPaths();
 
         return false;
     },
@@ -729,7 +724,6 @@ MyApplet.prototype = {
             this._includeCursor = false;
             this._openAfter = false;
             this._delay = 0;
-            this._useTimer = false;
             this._copyData = false;
             this._showCopyToggle = true;
             this._copyDataAutoOff = true;
@@ -753,17 +747,6 @@ MyApplet.prototype = {
             this.maybeRegisterRole("screenshot", metadata.uuid);
 
             this.testCanOpenFolderFile();
-
-            // Create our right-click menus first, they'll be modified once
-            // settings are loaded in the event one or both the save folders
-            // do not exist or are not writeable
-            this.openScreenshotsFolderItem = new Applet.MenuItem(_("Open screenshots folder"),
-                'folder-pictures', Lang.bind(this, this._openScreenshotsFolder));
-            this._applet_context_menu.addMenuItem(this.openScreenshotsFolderItem);
-
-            this.openRecordingsFolderItem = new Applet.MenuItem(_("Open recordings folder"),
-                'folder-videos', Lang.bind(this, this._openRecordingsFolder));
-            this._applet_context_menu.addMenuItem(this.openRecordingsFolderItem);
 
             // Load up our settings
             this._initSettings();
@@ -795,8 +778,6 @@ MyApplet.prototype = {
 
                 this._applet_context_menu.addMenuItem(this.settingsItem);
             }
-
-            this._checkPaths(true);
         } catch (e) {
             global.logError(e);
         }
@@ -805,10 +786,10 @@ MyApplet.prototype = {
     _checkPaths: function(force) {
         force = force || false;
 
-        this.openScreenshotsFolderItem.setSensitive(
+        this._cameraTitle.setSensitive(
             false != this._getCreateFolder(this._cameraSaveDir, force));
 
-        this.openRecordingsFolderItem.setSensitive(
+        this._recorderTitle.setSensitive(
             false != this._getCreateFolder(this._recorderSaveDir, force));
     },
 
@@ -823,10 +804,12 @@ MyApplet.prototype = {
     },
 
     _openScreenshotsFolder: function() {
+        this._checkPaths(true);
         this._doRunHandler('file://' + this._cameraSaveDir);
     },
 
     _openRecordingsFolder: function() {
+        this._checkPaths(true);
         this._doRunHandler('file://' + this._recorderSaveDir);
     },
 
@@ -852,8 +835,7 @@ MyApplet.prototype = {
 
     draw_menu: function(orientation) {
         this.menuManager = new PopupMenu.PopupMenuManager(this);
-        // this.menu = new Applet.AppletPopupMenu(this, this.orientation);
-        this.menu = new MyAppletPopupMenu(this, this.orientation, this._useTimer);
+        this.menu = new MyAppletPopupMenu(this, this.orientation);
         this.menuManager.addMenu(this.menu);
 
         this._contentSection = new PopupMenu.PopupMenuSection();
@@ -861,13 +843,11 @@ MyApplet.prototype = {
 
         this.set_applet_icon_symbolic_name('camera-photo-symbolic');
 
-        this._outputTitle = new PopupMenu.PopupIconMenuItem(
-            _("Camera") + ": " + _("Built-in"),
-            'camera-photo', St.IconType.SYMBOLIC, {
-                reactive: false
-            });
+        this._cameraTitle = new PopupMenu.PopupIconMenuItem(
+            _("Camera") + ": " + _("Built-in"), 'folder-pictures', St.IconType.SYMBOLIC);
+        this._cameraTitle.connect('activate', Lang.bind(this, this._openScreenshotsFolder));
 
-        this.menu.addMenuItem(this._outputTitle);
+        this.menu.addMenuItem(this._cameraTitle);
 
         let item = this.menu.addAction(this.indent(_("Window")), Lang.bind(this, function(e) {
             return this.run_cinnamon_camera(Screenshot.SelectionType.WINDOW, e);
@@ -915,32 +895,13 @@ MyApplet.prototype = {
         }));
         this.menu.addMenuItem(optionSwitch);
 
-        this.timerSwitch = new StubbornSwitchMenuItem(this.indent(_("Use timer")), this._useTimer, {
-            style_class: 'bin'
-        });
-        this.timerSwitch.connect('toggled', Lang.bind(this, function(e1, v) {
-            this._useTimer = v;
-            this.setSettingValue('use-timer', v);
-            this.menu._animateClose = v; // Tell the menu not to animate while timer is off
-            v ? this.timerSlider.actor.show() : this.timerSlider.actor.hide();
-            return false;
-        }));
-        this.menu.addMenuItem(this.timerSwitch);
-
-        this.timerSlider = new TimerSlider(3, 0, 10, {
+        this.timerSlider = new TimerSlider(this._delay, 0, 10, {
             reactive: false
         });
         this.timerSlider.connect("drag-end", Lang.bind(this, function(slider, val) {
-            if (val < 1) {
-                this.settings.setValue('use-timer', false);
-                this.timerSwitch.setToggleState(false);
-            } else {
-                this._delay = val;
-                this.settings.setValue('delay-seconds', val);
-                this.timerSwitch.setToggleState(true);
-            }
+            this._delay = val;
+            this.settings.setValue('delay-seconds', val);
         }));
-        this._useTimer ? this.timerSlider.actor.show() : this.timerSlider.actor.hide();
         this.menu.addMenuItem(this.timerSlider);
 
 
@@ -962,13 +923,11 @@ MyApplet.prototype = {
 
         this.menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
 
-        this._outputTitle2 = new PopupMenu.PopupIconMenuItem(
-            _("Recorder") + ": " + _("Build-in"),
-            "media-record", St.IconType.SYMBOLIC, {
-                reactive: false
-            });
+        this._recorderTitle = new PopupMenu.PopupIconMenuItem(
+            _("Recorder") + ": " + _("Built-in"), "folder-videos", St.IconType.SYMBOLIC);
+        this._recorderTitle.connect('activate', Lang.bind(this, this._openRecordingsFolder));
 
-        this.menu.addMenuItem(this._outputTitle2);
+        this.menu.addMenuItem(this._recorderTitle);
 
         this._cRecorderItem = this.menu.addAction(
             this.indent(_("Start recording")),
@@ -1263,7 +1222,7 @@ MyApplet.prototype = {
     },
 
     run_cinnamon_camera: function(type, event, index) {
-        let enableTimer = (this._useTimer && this._delay > 0);
+        let enableTimer = (this._delay > 0);
 
         if (type == Screenshot.SelectionType.REPEAT) {
             global.log("We shouldn't have reached run_cinnamon_camera.")
@@ -1290,7 +1249,6 @@ MyApplet.prototype = {
                 includeStyles: this._includeStyles,
                 windowAsArea: this._windowAsArea,
                 playShutterSound: this._playShutterSound,
-                useTimer: enableTimer,
                 playTimerSound: this._playIntervalSound,
                 timerDuration: this._delay,
                 soundTimerInterval: 'dialog-warning',
@@ -1313,7 +1271,7 @@ MyApplet.prototype = {
 
     maybeCloseMenu: function() {
         // Make sure we don't get our popup menu in the screenshot
-        if (!this.useTimer) {
+        if (this._delay == 0) {
             this.menu.close(false);
         }
     },
@@ -1575,7 +1533,7 @@ MyApplet.prototype = {
     },
 
     _send_test_notification: function() {
-        var enableTimer = (this._useTimer && this._delay > 0);
+        var enableTimer = (this._delay > 0);
         var options = {
             includeCursor: this._includeCursor,
             useFlash: this._useCameraFlash,
@@ -1583,7 +1541,6 @@ MyApplet.prototype = {
             includeStyles: this._includeStyles,
             windowAsArea: this._windowAsArea,
             playShutterSound: this._playShutterSound,
-            useTimer: enableTimer,
             playTimerSound: this._playIntervalSound,
             timerDuration: this._delay,
             soundTimerInterval: 'dialog-warning',
@@ -1640,7 +1597,7 @@ MyApplet.prototype = {
     },
 
     on_config_demo_notification: function() {
-        var enableTimer = (this._useTimer && this._delay > 0);
+        var enableTimer = (this._delay > 0);
         var options = {
             includeCursor: this._includeCursor,
             useFlash: this._useCameraFlash,
@@ -1648,7 +1605,6 @@ MyApplet.prototype = {
             includeStyles: this._includeStyles,
             windowAsArea: this._windowAsArea,
             playShutterSound: this._playShutterSound,
-            useTimer: enableTimer,
             playTimerSound: this._playIntervalSound,
             timerDuration: this._delay,
             soundTimerInterval: 'dialog-warning',

@@ -75,7 +75,6 @@ ScreenshotHelper.prototype = {
             includeStyles: true,
             windowAsArea: false,
             playShutterSound: true,
-            useTimer: true,
             playTimerSound: true,
             timerDuration: 3,
             soundTimerInterval: 'dialog-warning',
@@ -142,7 +141,7 @@ ScreenshotHelper.prototype = {
     },
 
     captureTimer: function(options, onFinished, onInterval) {
-        if (options.useTimer && options.timerDuration > 0) {
+        if (options.timerDuration > 0) {
             this._setTimer(options.timerDuration);
             this._fadeOutTimer();
 
