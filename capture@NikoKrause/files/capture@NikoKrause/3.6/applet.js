@@ -612,9 +612,6 @@ MyApplet.prototype = {
         this._sendNotification = this.settings.getValue('send-notification');
         this._includeStyles = this.settings.getValue('include-styles');
 
-        this._notifLeftClickBehavior = this.settings.getValue('notif-image-left-click');
-        this._notifRightClickBehavior = this.settings.getValue('notif-image-right-click');
-
         this._showDeleteAction = this.settings.getValue('show-delete-action');
         this._showCopyPathAction = this.settings.getValue('show-copy-path-action');
         this._showCopyDataAction = this.settings.getValue('show-copy-data-action');
@@ -1116,31 +1113,10 @@ MyApplet.prototype = {
                 return this.handleNotificationResponse(screenshot, action_id, n);
             }));
 
-            // Left-click events
-            if ('dismiss' != this._notifLeftClickBehavior) {
-                notification.connect('image-left-clicked', Lang.bind(this, function(n, s) {
-                    if ('open-dir' == this._notifLeftClickBehavior && this._canOpenFolderFile) {
-                        this.openFolderFile(screenshot.file);
-                    } else {
-                        let path = 'open-file' == this._notifLeftClickBehavior ?
-                            screenshot.file : screenshot.outputDirectory;
-                        this._doRunHandler('file://' + path);
-                    }
-                }));
-            }
-            // Right-click events
-            if ('dismiss' != this._notifRightClickBehavior) {
-                notification.connect('image-right-clicked', Lang.bind(this, function(n, s) {
-                    global.log('right-click');
-                    if ('open-dir' == this._notifRightClickBehavior && this._canOpenFolderFile) {
-                        this.openFolderFile(screenshot.file);
-                    } else {
-                        let path = 'open-file' == this._notifRightClickBehavior ?
-                            screenshot.file : screenshot.outputDirectory;
-                        this._doRunHandler('file://' + path);
-                    }
-                }));
-            }
+            // Left-click on notification image
+            notification.connect('image-left-clicked', Lang.bind(this, function(n, s) {
+                this._doRunHandler('file://' + screenshot.file);
+            }));
 
             notification.connect('clicked', Lang.bind(this, function(n, s) {
                 n.destroy();

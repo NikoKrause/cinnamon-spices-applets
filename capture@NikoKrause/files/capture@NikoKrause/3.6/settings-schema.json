@@ -25,12 +25,12 @@
       "screenshot-builtin-notif": {
          "type": "section",
          "title": "Notifications",
-         "keys": ["send-notification","notif-image-left-click","notif-image-right-click","show-copy-path-action","show-copy-data-action","show-delete-action","demo-notification-button"]
+         "keys": ["send-notification","show-copy-path-action","show-copy-data-action","show-delete-action","demo-notification-button"]
       },
       "screenshot-builtin-kb": {
          "type": "section",
          "title": "Keybindings",
-         "keys": ["kb-cs-window","kb-cs-area","kb-cs-ui","kb-cs-screen","kb-cs-repeat","kb-cs-monitor-0"]
+         "keys": ["kb-cs-screen","kb-cs-window","kb-cs-area","kb-cs-ui","kb-cs-repeat","kb-cs-monitor-0"]
       },
       "screenshot-builtin-fx": {
          "type": "section",
@@ -113,28 +113,28 @@
       "type": "label",
       "description": "Note: changing keybindings may require restarting Cinnamon."
    },
+   "kb-cs-screen" : {
+      "indent": true,
+      "type" : "keybinding",
+      "description" : "Keybinding to capture the screen: ",
+      "default" : "<Control>F5"
+   },
    "kb-cs-window" : {
       "indent": true,
       "type" : "keybinding",
       "description" : "Keybinding to capture a window: ",
-      "default" : "<Control>F5"
+      "default" : "<Control>F6"
    },
    "kb-cs-area" : {
       "indent": true,
       "type" : "keybinding",
       "description" : "Keybinding to capture an area: ",
-      "default" : "<Control>F6"
+      "default" : "<Control>F7"
    },
    "kb-cs-ui" : {
       "indent": true,
       "type" : "keybinding",
       "description" : "Keybinding to capture a UI element: ",
-      "default" : "<Control>F7"
-   },
-   "kb-cs-screen" : {
-      "indent": true,
-      "type" : "keybinding",
-      "description" : "Keybinding to capture the screen: ",
       "default" : "<Control>F8"
    },
    "kb-cs-repeat" : {
@@ -241,30 +241,6 @@
       "type": "checkbox",
       "description": "Use desktop notifications",
       "tooltip": "Whether to send a notification to desktop after capture"
-   },
-   "notif-image-left-click": {
-      "default": "open-file",
-      "type": "combobox",
-      "options": {
-         "Do nothing": "dismiss",
-         "Open the file": "open-file",
-         "Open the directory": "open-dir"
-      },
-      "description": "When left-clicking preview image",
-      "tooltip": "",
-      "dependency": "send-notification"
-   },
-   "notif-image-right-click": {
-      "default": "open-file",
-      "type": "combobox",
-      "options": {
-         "Do nothing": "dismiss",
-         "Open the file": "open-file",
-         "Open the directory": "open-dir"
-      },
-      "description": "When right-clicking preview image",
-      "tooltip": "",
-      "dependency": "send-notification"
    },
    "show-copy-path-action": {
       "indent": true,
