@@ -1002,7 +1002,7 @@ ScreenshotHelper.prototype = {
         this.border4.set_position(width - 1, 0);
         this.border4.set_size(1, height);
 
-        let handleSize = 10;
+        let handleSize = 12;
 
         this.handle1.set_position(0 - (handleSize / 2), 0 - (handleSize / 2));
         this.handle1.set_size(handleSize, handleSize);
