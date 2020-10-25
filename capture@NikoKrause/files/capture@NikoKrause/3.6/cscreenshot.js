@@ -1004,21 +1004,21 @@ ScreenshotHelper.prototype = {
 
         let handleSize = 10;
 
-        this.handle1.set_position(0, 0);
+        this.handle1.set_position(0 - (handleSize / 2), 0 - (handleSize / 2));
         this.handle1.set_size(handleSize, handleSize);
-        this.handle2.set_position(width / 2 - (handleSize / 2), 0);
+        this.handle2.set_position(width / 2 - (handleSize / 2), 0 - (handleSize / 2));
         this.handle2.set_size(handleSize, handleSize);
-        this.handle3.set_position(width - handleSize, 0);
+        this.handle3.set_position(width - (handleSize / 2), 0 - (handleSize / 2));
         this.handle3.set_size(handleSize, handleSize);
-        this.handle4.set_position(0, height / 2 - (handleSize / 2));
+        this.handle4.set_position(0 - (handleSize / 2), height / 2 - (handleSize / 2));
         this.handle4.set_size(handleSize, handleSize);
-        this.handle5.set_position(width - handleSize, height / 2 - (handleSize / 2));
+        this.handle5.set_position(width - (handleSize / 2), height / 2 - (handleSize / 2));
         this.handle5.set_size(handleSize, handleSize);
-        this.handle6.set_position(0, height - handleSize);
+        this.handle6.set_position(0 - (handleSize / 2), height - (handleSize / 2));
         this.handle6.set_size(handleSize, handleSize);
-        this.handle7.set_position(width / 2 - (handleSize / 2), height - handleSize);
+        this.handle7.set_position(width / 2 - (handleSize / 2), height - (handleSize / 2));
         this.handle7.set_size(handleSize, handleSize);
-        this.handle8.set_position(width - handleSize, height - handleSize);
+        this.handle8.set_position(width - (handleSize / 2), height - (handleSize / 2));
         this.handle8.set_size(handleSize, handleSize);
     },
 

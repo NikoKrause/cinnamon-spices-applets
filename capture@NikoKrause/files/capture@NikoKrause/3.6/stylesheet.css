@@ -86,14 +86,14 @@
 }
 /* Shadow for non-selected parts of screen (Area capture mode) */
 .cover {
-   background-color: rgba(0, 0, 0, 0.75);
+   background-color: rgba(0, 0, 0, 0.5);
 }
 /* St.Group holding the covers above */
 .shadow-container {}
 /* Rubberband handles during selection (Area capture mode) */
 .handle {
    border: 1px solid #000;
-   background-color: rgba(250, 250, 250, 0.5);
+   background-color: rgba(250, 250, 250, 0.9);
    border-radius: 10px;
 }
 /* St.Group container for instructions */

@@ -1667,7 +1667,7 @@ function main(metadata, orientation, panelHeight, instanceId) {
     AppletDir = metadata.path;
     imports.searchPath.push(AppletDir);
 
-    Screenshot = imports.screenshot;
+    Screenshot = imports.cscreenshot;
     AppUtil = imports.apputil;
 
     ICON_FILE = AppletDir + '/icon.png';
