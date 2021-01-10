@@ -1,7 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 
-import pygtk
-pygtk.require('2.0')
 from gi.repository import Gio, Gtk, Gdk, GObject
 from gi.repository.GdkPixbuf import Pixbuf
 import os
@@ -20,5 +18,5 @@ def copy_image(f):
 if len(sys.argv) > 1:
    copy_image(sys.argv[1]);
 else:
-   print "Argument required: file path to copy to clipboard."
+   print("Argument required: file path to copy to clipboard.")
    sys.exit(0)

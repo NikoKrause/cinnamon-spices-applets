@@ -9,7 +9,7 @@ function Exec (cmd) {
     let success, argc, argv, pid, stdin, stdout, stderr;
     [success,argv] = GLib.shell_parse_argv(cmd);
     [success,pid,stdin,stdout,stderr] =
-     GLib.spawn_async_with_pipes(null,argv,null,GLib.SpawnFlags.SEARCH_PATH,null,null);
+     GLib.spawn_async_with_pipes(null,argv,null,GLib.SpawnFlags.SEARCH_PATH,null);
   }
   catch (e)
   {

@@ -52,51 +52,6 @@ let ICON_FILE;
 let ICON_FILE_ACTIVE;
 let CLIPBOARD_HELPER;
 
-// We use an altered URLHighlighter because /tmp looks better than file://tmp/,
-// and I'm a picky SOB.
-function URLHighlighter(text, lineWrap, allowMarkup) {
-    this._init(text, lineWrap, allowMarkup);
-}
-URLHighlighter.prototype = {
-    __proto__: MessageTray.URLHighlighter.prototype,
-
-    _init: function(text, lineWrap, allowMarkup) {
-        MessageTray.URLHighlighter.prototype._init.call(this, text, lineWrap, allowMarkup);
-    },
-
-    // _shortenUrl doesn't exist in base class
-    _shortenUrl: function(url) {
-        if (url.substring(0, 7) == 'http://') {
-            return url.substring(7);
-        } else if (url.substring(0, 7) == 'file://') {
-            return url.substring(7);
-        }
-        return url;
-    },
-
-    _highlightUrls: function() {
-        // text here contain markup
-        let urls = Util.findUrls(this._text);
-        let markup = '';
-        let pos = 0;
-        for (let i = 0; i < urls.length; i++) {
-            let url = urls[i];
-            let str = this._text.substr(pos, url.pos - pos);
-            let shortUrl = this._shortenUrl(url.url);
-
-            markup += str + '<span foreground="' + this._linkColor + '"><u>' + shortUrl + '</u></span>';
-            pos = url.pos + url.url.length;
-
-            if (shortUrl != url.url) {
-                // Save the altered match position
-                this._urls[i].pos -= url.url.length - shortUrl.length;
-            }
-        }
-        markup += this._text.substr(pos);
-        this.actor.clutter_text.set_markup(markup);
-    },
-}
-
 function Source(sourceId, screenshot) {
     this._init(sourceId, screenshot);
 }
@@ -247,121 +202,6 @@ TimerSlider.prototype = {
         }
     }
 };
-
-function ScreenshotNotification(source, title, banner, params) {
-    this._init(source, title, banner, params);
-}
-ScreenshotNotification.prototype = {
-    __proto__: MessageTray.Notification.prototype,
-    _delayedResident: null,
-    _cursorChanged: false,
-
-    _init: function(source, title, banner, params) {
-        MessageTray.Notification.prototype._init.call(this, source, title, banner, params);
-    },
-
-    // We override setImage so we can change row_span from 2->1.
-    setImage: function(image) {
-        if (this._imageBin)
-            this.unsetImage();
-
-        // Make our bin reactive so we can click on it
-        this._imageBin = new St.Bin({
-            reactive: true,
-            style_class: 'screenshot-thumbnail'
-        });
-        this._imageBin.child = image;
-        this._imageBin.opacity = 230;
-
-        this._table.add_style_class_name('multi-line-notification');
-        this._table.add_style_class_name('notification-with-image');
-        this._addBannerBody();
-        this._updateLastColumnSettings();
-        this._table.add(this._imageBin, {
-            row: 1,
-            col: 1,
-            row_span: 2,
-            x_expand: false,
-            y_expand: false,
-            x_fill: false,
-            y_fill: false
-        });
-
-        // Make the image thumbnail interactive
-        this._imageBin.connect('button-press-event', Lang.bind(this, this._onImageButtonPressed));
-        this._imageBin.connect('motion-event', Lang.bind(this, function(actor, event) {
-            if (!actor.visible || actor.get_paint_opacity() == 0)
-                return false;
-
-            global.set_cursor(Cinnamon.Cursor.POINTING_HAND);
-            this._cursorChanged = true;
-            this._imageBin.add_style_class_name('screenshot-thumbnail-hover');
-            return false;
-        }));
-        this._imageBin.connect('leave-event', Lang.bind(this, function() {
-            if (!this._imageBin.visible || this._imageBin.get_paint_opacity() == 0)
-                return;
-
-            if (this._cursorChanged) {
-                this._cursorChanged = false;
-                global.unset_cursor();
-                this._imageBin.remove_style_class_name('screenshot-thumbnail-hover');
-            }
-        }));
-    },
-
-    _onImageMouseover: function(actor, event) {
-        //global.log('mouseover!!');
-    },
-
-    // Expose the clicks now and maybe we'll allow configurable behavior later
-    _onImageButtonPressed: function(actor, event) {
-        if (event.get_button() == 1) {
-            this.emit('image-left-clicked');
-            return true;
-        } else if (event.get_button() == 3) {
-            this.emit('image-right-clicked');
-        } else if (event.get_button() == 2) {
-            this.emit('image-middle-clicked');
-        }
-
-        return false;
-    },
-
-    // Similarly we need to change the action area to spn both columns.
-    _updateLastColumnSettings: function() {
-        if (this._scrollArea)
-            this._table.child_set(this._scrollArea, {
-                col: 2,
-                col_span: 1
-            });
-        if (this._actionArea)
-            this._table.child_set(this._actionArea, {
-                row: 3,
-                col: 1,
-                row_span: 1,
-                col_span: 2,
-                x_fill: false,
-                x_expand: false
-            });
-    },
-
-    _onClicked: function() {
-        this.emit('clicked');
-    },
-
-    addBody: function(text, markup, style) {
-        if (this.bodyLabel) {
-            this.bodyLabel.actor.destroy();
-            this.bodyLabel = null;
-        }
-
-        this.bodyLabel = new URLHighlighter(text, true, markup);
-        this.addActor(this.bodyLabel.actor, style);
-        return this.bodyLabel.actor;
-    },
-}
-
 
 function StubbornSwitchMenuItem() {
     this._init.apply(this, arguments);
@@ -1066,7 +906,7 @@ MyApplet.prototype = {
                 screenshot.clipboardMessage = _('Directory has been copied to clipboard.');
             } else if (ClipboardCopyType.IMAGEDATA == copyToClipboard &&
                 CLIPBOARD_HELPER) {
-                AppUtil.Exec('python ' + CLIPBOARD_HELPER + ' ' + screenshot.file);
+                AppUtil.Exec('python3 ' + CLIPBOARD_HELPER + ' ' + screenshot.file);
                 screenshot.clipboardMessage = _('Image data has been copied to clipboard.');
             }
         }
@@ -1099,10 +939,8 @@ MyApplet.prototype = {
                 (screenshot.extraActionMessage ? "\n\n" + screenshot.extraActionMessage : "") +
                 (screenshot.clipboardMessage ? "\n\n" + screenshot.clipboardMessage : "");
 
-            let notification = new ScreenshotNotification(source,
-                _("Screenshot captured!"), null, {
-                    body: body,
-                    customContent: true,
+            let notification = new MessageTray.Notification(source,
+                _("Screenshot captured!"), body, {
                     bodyMarkup: true
                 });
             notification.setResident(true);
@@ -1160,7 +998,7 @@ MyApplet.prototype = {
         } else if ('open-file' == action) {
             this._doRunHandler('file://' + screenshot.file);
         } else if ('copy-data' == action) {
-            AppUtil.Exec('python ' + CLIPBOARD_HELPER + ' ' + screenshot.file);
+            AppUtil.Exec('python3 ' + CLIPBOARD_HELPER + ' ' + screenshot.file);
         } else if ('copy-path' == action) {
             this.setClipboardText(screenshot.file);
         } else if ('open-link' == action) {
@@ -1601,7 +1439,7 @@ MyApplet.prototype = {
         this.cinnamon_camera_complete(screenshot);
 
         let timeoutId = Mainloop.timeout_add(3000, Lang.bind(this, function() {
-            this.on_settings_changed();
+            this._onSettingsChanged();
         }));
     },
 
