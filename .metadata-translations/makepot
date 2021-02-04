@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# The "makepot.py" file is the official "cinnamon-xlet-makpot" file,
+# but with "settings-schema.json" scan removed.
+# So the command grabs translations only from "metadata.json" files.
+python3 makepot.py -j -p .. -o po/metadata.pot
+
+# Find all Danish translation files "da.po"
+find .. -name "da.po" > DA-FILES
+# Concatenate and merge all "da.po" files.
+# Use the first found translation for duplicate strings to avoid conflicts.
+msgcat --use-first -o po/da.po --files-from=DA-FILES
+# Update the "da.po" file against the "metadata.pot" template.
+# This will keep only the strings from "metadata.pot" and removes unnecessary strings.
+msgmerge --no-fuzzy-matching --silent --update --backup=none po/da.po po/metadata.pot
+# Clear all obsolete translations
+msgattrib --no-obsolete --empty po/da.po -o po/da.po
+
+# Remove DA-FILES, which is no longer needed
+rm DA-FILES

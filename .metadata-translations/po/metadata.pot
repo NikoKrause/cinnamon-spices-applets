@@ -1,0 +1,1673 @@
+#
+msgid ""
+msgstr ""
+
+#. sysmonitor@orcus->files->sysmonitor@orcus->metadata.json->description
+msgid "Displays CPU, memory, swap and network usage and load in graphs"
+msgstr ""
+
+#. sysmonitor@orcus->files->sysmonitor@orcus->metadata.json->name
+msgid "System Monitor"
+msgstr ""
+
+#. SpicesUpdate@claudiux->files->SpicesUpdate@claudiux->metadata.json->name
+msgid "Spices Update"
+msgstr ""
+
+#. SpicesUpdate@claudiux->files->SpicesUpdate@claudiux->metadata.json->description
+msgid ""
+"Warns you when installed Spices (applets, desklets, extensions, themes) "
+"require an update or new Spices are available."
+msgstr ""
+
+#. nordvpn-indicator@nickdurante->files->nordvpn-
+#. indicator@nickdurante->metadata.json->name
+#. nordvpn-indicator@nickdurante->files->nordvpn-
+#. indicator@nickdurante->metadata.json->name
+msgid "NordVPN Indicator"
+msgstr ""
+
+#. nordvpn-indicator@nickdurante->files->nordvpn-
+#. indicator@nickdurante->metadata.json->description
+#. nordvpn-indicator@nickdurante->files->nordvpn-
+#. indicator@nickdurante->metadata.json->description
+msgid "Check your NordVPN connection"
+msgstr ""
+
+#. tracker@glebihan->files->tracker@glebihan->metadata.json->name
+msgid "Search using Tracker"
+msgstr ""
+
+#. tracker@glebihan->files->tracker@glebihan->metadata.json->description
+msgid "Search for files and applications using Tracker"
+msgstr ""
+
+#. bing-wallpaper@starcross.dev->files->bing-
+#. wallpaper@starcross.dev->metadata.json->name
+#. bing-wallpaper@starcross.dev->files->bing-
+#. wallpaper@starcross.dev->metadata.json->name
+msgid "Bing Desktop Wallpaper"
+msgstr ""
+
+#. bing-wallpaper@starcross.dev->files->bing-
+#. wallpaper@starcross.dev->metadata.json->description
+#. bing-wallpaper@starcross.dev->files->bing-
+#. wallpaper@starcross.dev->metadata.json->description
+msgid "Download and apply Today's Bing Wallpaper to your desktop"
+msgstr ""
+
+#. ShellTools@abgoyal->files->ShellTools@abgoyal->metadata.json->name
+msgid "ShellTools"
+msgstr ""
+
+#. ShellTools@abgoyal->files->ShellTools@abgoyal->metadata.json->description
+msgid "Provides an easy way to run shell commands"
+msgstr ""
+
+#. web-developer-menu@infiniteshroom->files->web-developer-
+#. menu@infiniteshroom->metadata.json->name
+#. web-developer-menu@infiniteshroom->files->web-developer-
+#. menu@infiniteshroom->metadata.json->name
+msgid "Web Developer Menu"
+msgstr ""
+
+#. web-developer-menu@infiniteshroom->files->web-developer-
+#. menu@infiniteshroom->metadata.json->description
+#. web-developer-menu@infiniteshroom->files->web-developer-
+#. menu@infiniteshroom->metadata.json->description
+msgid "A Menu for PHP/MySQL Web Developers"
+msgstr ""
+
+#. workspace-name@willurd->files->workspace-name@willurd->metadata.json->name
+msgid "Workspace Name"
+msgstr ""
+
+#. workspace-name@willurd->files->workspace-
+#. name@willurd->metadata.json->description
+#. workspace-name@willurd->files->workspace-
+#. name@willurd->metadata.json->description
+msgid "Show the current workspace name in the panel"
+msgstr ""
+
+#. healthyeyes@ipolozov->files->healthyeyes@ipolozov->metadata.json->description
+msgid ""
+"Quiet reminder to take a break every half an hour. When the circle is red, "
+"give your eyes a rest by looking away from your monitor."
+msgstr ""
+
+#. healthyeyes@ipolozov->files->healthyeyes@ipolozov->metadata.json->name
+msgid "Healthy Eyes"
+msgstr ""
+
+#. shutdown-timer@webum.by->files->shutdown-
+#. timer@webum.by->metadata.json->name
+#. shutdown-timer@webum.by->files->shutdown-
+#. timer@webum.by->metadata.json->name
+msgid "Shutdown timer"
+msgstr ""
+
+#. shutdown-timer@webum.by->files->shutdown-
+#. timer@webum.by->metadata.json->description
+#. shutdown-timer@webum.by->files->shutdown-
+#. timer@webum.by->metadata.json->description
+msgid ""
+"Applet to help you shutdown, restart and suspend your system with timer"
+msgstr ""
+
+#. show-hide-applets@mohammad-sn->files->show-hide-applets@mohammad-
+#. sn->metadata.json->description
+#. show-hide-applets@mohammad-sn->files->show-hide-applets@mohammad-
+#. sn->metadata.json->description
+msgid ""
+"hide a few applet to have a neater panel, and make them show up again by a "
+"click"
+msgstr ""
+
+#. show-hide-applets@mohammad-sn->files->show-hide-applets@mohammad-
+#. sn->metadata.json->name
+#. show-hide-applets@mohammad-sn->files->show-hide-applets@mohammad-
+#. sn->metadata.json->name
+msgid "Drawer (show/hide applets)"
+msgstr ""
+
+#. sessionManager@scollins->files->sessionManager@scollins->metadata.json->name
+msgid "Session Manager"
+msgstr ""
+
+#. sessionManager@scollins->files->sessionManager@scollins->metadata.json->description
+msgid "Provides easy access to shut down, restart, etc"
+msgstr ""
+
+#. sessionManager@scollins->files->sessionManager@scollins->metadata.json->comments
+msgid ""
+"Session Manager is an applet that provides easy access to session controls "
+"such as shut down, restart, log off, switch user, etc. It has been tested in"
+" Arch, Fedora and Linux Mint, and supports a wide variety of software "
+"configurations. If your particular configuration is not supported, please "
+"submit a feature request on github, and I will add it at my earliest "
+"convenience."
+msgstr ""
+
+#. sessionManager@scollins->files->sessionManager@scollins->metadata.json->contributors
+#. officeCenter@scollins->files->officeCenter@scollins->metadata.json->contributors
+#. commandLauncher@scollins->files->commandLauncher@scollins->metadata.json->contributors
+#. graphicsCenter@scollins->files->graphicsCenter@scollins->metadata.json->contributors
+#. placesCenter@scollins->files->placesCenter@scollins->metadata.json->contributors
+#. sticky@scollins->files->sticky@scollins->metadata.json->contributors
+msgid "Stephen Collins - Author"
+msgstr ""
+
+#. jenkins@backuity.org->files->jenkins@backuity.org->metadata.json->name
+msgid "Jenkins Builds"
+msgstr ""
+
+#. jenkins@backuity.org->files->jenkins@backuity.org->metadata.json->description
+msgid "View jenkins builds"
+msgstr ""
+
+#. SW++@mohammad-sn->files->SW++@mohammad-sn->metadata.json->description
+msgid ""
+"click to show/hide desktop, scroll to switch workspace and windows quick "
+"list by right click"
+msgstr ""
+
+#. SW++@mohammad-sn->files->SW++@mohammad-sn->metadata.json->name
+msgid "Show desktop ++"
+msgstr ""
+
+#. binaryclock@entelechy->files->binaryclock@entelechy->metadata.json->name
+msgid "Cinnamon Binary Clock"
+msgstr ""
+
+#. binaryclock@entelechy->files->binaryclock@entelechy->metadata.json->description
+msgid "The Cinnamon calendar applet, with the time displayed in binary"
+msgstr ""
+
+#. timeshift-spy@nicog60->files->timeshift-
+#. spy@nicog60->metadata.json->description
+#. timeshift-spy@nicog60->files->timeshift-
+#. spy@nicog60->metadata.json->description
+msgid ""
+"Show the state of Timeshift, if it is currently making snapshots in the "
+"background"
+msgstr ""
+
+#. timeshift-spy@nicog60->files->timeshift-spy@nicog60->metadata.json->name
+msgid "Timeshift Spy"
+msgstr ""
+
+#. expressvpn@Hukuta->files->expressvpn@Hukuta->metadata.json->name
+msgid "ExpressVPN"
+msgstr ""
+
+#. expressvpn@Hukuta->files->expressvpn@Hukuta->metadata.json->description
+msgid ""
+"Connect to VPN in one click from this applet. ExpressVPN client is required "
+"(this is a paid service)"
+msgstr ""
+
+#. redshift@marvel4u->files->redshift@marvel4u->metadata.json->description
+msgid ""
+"An app to change the red filter level for late night screen time. Requires "
+"redshift: sudo apt-get install redshift"
+msgstr ""
+
+#. redshift@marvel4u->files->redshift@marvel4u->metadata.json->name
+msgid "Redshift"
+msgstr ""
+
+#. clipboard-qr@wrouesnel->files->clipboard-qr@wrouesnel->metadata.json->name
+msgid "Clipboard QR code applet"
+msgstr ""
+
+#. clipboard-qr@wrouesnel->files->clipboard-
+#. qr@wrouesnel->metadata.json->description
+#. clipboard-qr@wrouesnel->files->clipboard-
+#. qr@wrouesnel->metadata.json->description
+msgid "Create QR codes from clipboard content"
+msgstr ""
+
+#. rwall@typicalfoobar->files->rwall@typicalfoobar->metadata.json->name
+msgid "rwall"
+msgstr ""
+
+#. rwall@typicalfoobar->files->rwall@typicalfoobar->metadata.json->description
+msgid ""
+"Random Wallpaper Changer\n"
+"Version: 1.0.1"
+msgstr ""
+
+#. ratecurrency@magner->files->ratecurrency@magner->metadata.json->name
+msgid "Fiat and cryptocurrency quote rates"
+msgstr ""
+
+#. ratecurrency@magner->files->ratecurrency@magner->metadata.json->description
+msgid ""
+"Displays the current price and trends of cryptocurrencies (TOP 150 coins "
+"with CoinMarketCap) and popular fiat currencies (Dollar, Euro, Ruble etc.). "
+"Monitoring daily percentage changes."
+msgstr ""
+
+#. screen-inhibit@mtwebster->files->screen-
+#. inhibit@mtwebster->metadata.json->description
+#. screen-inhibit@mtwebster->files->screen-
+#. inhibit@mtwebster->metadata.json->description
+msgid "Click to inhibit the screensaver, click again to remove inhibition"
+msgstr ""
+
+#. screen-inhibit@mtwebster->files->screen-
+#. inhibit@mtwebster->metadata.json->name
+#. screen-inhibit@mtwebster->files->screen-
+#. inhibit@mtwebster->metadata.json->name
+msgid "Screensaver Inhibitor"
+msgstr ""
+
+#. gputemperature@silentage.com->files->gputemperature@silentage.com->metadata.json->name
+msgid "GPU Temperature"
+msgstr ""
+
+#. gputemperature@silentage.com->files->gputemperature@silentage.com->metadata.json->description
+msgid ""
+"Shows NVidia/ATI GPU temperature in the panel, and detailed/multi-gpu "
+"information in a popup menu."
+msgstr ""
+
+#. ScreenShot+RecordDesktop@tech71->files->ScreenShot+RecordDesktop@tech71->metadata.json->description
+msgid ""
+"Take A Snapshot Or Record Your Desktop (recording requires the packages "
+"ffmpeg, xdotool & x11-utils to be installed)"
+msgstr ""
+
+#. ScreenShot+RecordDesktop@tech71->files->ScreenShot+RecordDesktop@tech71->metadata.json->name
+msgid "ScreenShot+Record Desktop"
+msgstr ""
+
+#. cheaty@centurix->files->cheaty@centurix->metadata.json->description
+msgid "An applet to provide quick access to a variety of cheat sheets."
+msgstr ""
+
+#. cheaty@centurix->files->cheaty@centurix->metadata.json->name
+msgid "Cheaty - Cheatsheet keeper"
+msgstr ""
+
+#. systray-collapsible@koutch->files->systray-
+#. collapsible@koutch->metadata.json->description
+#. systray-collapsible@koutch->files->systray-
+#. collapsible@koutch->metadata.json->description
+msgid "Expandable/Collapsible System Tray Applet "
+msgstr ""
+
+#. systray-collapsible@koutch->files->systray-
+#. collapsible@koutch->metadata.json->name
+#. systray-collapsible@koutch->files->systray-
+#. collapsible@koutch->metadata.json->name
+msgid "System Tray Collapsible"
+msgstr ""
+
+#. rancher@centurix->files->rancher@centurix->metadata.json->description
+msgid "An applet to manage Homestead."
+msgstr ""
+
+#. rancher@centurix->files->rancher@centurix->metadata.json->name
+msgid "Homestead manager"
+msgstr ""
+
+#. tzclock@lhriley->files->tzclock@lhriley->metadata.json->name
+msgid "Timezone Clock"
+msgstr ""
+
+#. tzclock@lhriley->files->tzclock@lhriley->metadata.json->description
+msgid "A simple clock for displaying the current time in a timezone"
+msgstr ""
+
+#. tor-button@shatur->files->tor-button@shatur->metadata.json->description
+msgid "Applet for Tor network management"
+msgstr ""
+
+#. tor-button@shatur->files->tor-button@shatur->metadata.json->name
+msgid "Tor Button"
+msgstr ""
+
+#. stevedore@centurix->files->stevedore@centurix->metadata.json->description
+msgid "Docker controlling applet."
+msgstr ""
+
+#. stevedore@centurix->files->stevedore@centurix->metadata.json->name
+msgid "Stevedor - Docker controller"
+msgstr ""
+
+#. text-to-speech-applet@cardsurf->files->text-to-speech-
+#. applet@cardsurf->metadata.json->description
+#. text-to-speech-applet@cardsurf->files->text-to-speech-
+#. applet@cardsurf->metadata.json->description
+msgid "A text reading applet"
+msgstr ""
+
+#. text-to-speech-applet@cardsurf->files->text-to-speech-
+#. applet@cardsurf->metadata.json->name
+#. text-to-speech-applet@cardsurf->files->text-to-speech-
+#. applet@cardsurf->metadata.json->name
+msgid "Text to speech applet"
+msgstr ""
+
+#. Cinnamenu@json->files->Cinnamenu@json->metadata.json->name
+msgid "Cinnamenu"
+msgstr ""
+
+#. Cinnamenu@json->files->Cinnamenu@json->metadata.json->description
+msgid ""
+"A flexible menu providing formatting options, web bookmarks, search provider"
+" support and fuzzy searching."
+msgstr ""
+
+#. system-monitor@spacy01->files->system-monitor@spacy01->metadata.json->name
+msgid "System monitor"
+msgstr ""
+
+#. system-monitor@spacy01->files->system-
+#. monitor@spacy01->metadata.json->description
+#. system-monitor@spacy01->files->system-
+#. monitor@spacy01->metadata.json->description
+msgid "Click here to see processes and etc."
+msgstr ""
+
+#. search-box@mtwebster->files->search-box@mtwebster->metadata.json->name
+msgid "Internet Search Box"
+msgstr ""
+
+#. search-box@mtwebster->files->search-
+#. box@mtwebster->metadata.json->description
+#. search-box@mtwebster->files->search-
+#. box@mtwebster->metadata.json->description
+msgid "Perform an Internet search, using your favorite engine"
+msgstr ""
+
+#. gmail@lauritsriple->files->gmail@lauritsriple->metadata.json->name
+msgid "GmailNotifier"
+msgstr ""
+
+#. gmail@lauritsriple->files->gmail@lauritsriple->metadata.json->description
+msgid "Shows most recent mails, and how many unread messages you have."
+msgstr ""
+
+#. officeCenter@scollins->files->officeCenter@scollins->metadata.json->name
+msgid "Office Center"
+msgstr ""
+
+#. officeCenter@scollins->files->officeCenter@scollins->metadata.json->description
+msgid "Provides an easy and fast resource for all your office needs"
+msgstr ""
+
+#. officeCenter@scollins->files->officeCenter@scollins->metadata.json->comments
+msgid ""
+"Office Center is a feature-rich, cross-platform Cinnamon applet that "
+"provides easy aceess to all of your office programs and documents. Feel free"
+" to contribute by submitting pull requests, bug reports and feature requests"
+" to my github repo."
+msgstr ""
+
+#. PDFManager@cinnamon.org->files->PDFManager@cinnamon.org->metadata.json->name
+msgid "PDFManager"
+msgstr ""
+
+#. PDFManager@cinnamon.org->files->PDFManager@cinnamon.org->metadata.json->description
+msgid "A handy applet for manipulating PDF"
+msgstr ""
+
+#. bumblebee@pdcurtis->files->bumblebee@pdcurtis->metadata.json->description
+msgid ""
+"Displays Status of Bumblebee and nVidia GPU Temperature with associated "
+"support functions including starting selected programs with optirun or "
+"primusrun"
+msgstr ""
+
+#. bumblebee@pdcurtis->files->bumblebee@pdcurtis->metadata.json->name
+msgid "Bumblebee Status with NVidia Temperature Display"
+msgstr ""
+
+#. hamster@projecthamster.wordpress.com->files->hamster@projecthamster.wordpress.com->metadata.json->description
+msgid "Cinnamon applet for project hamster - the GNOME time tracker"
+msgstr ""
+
+#. hamster@projecthamster.wordpress.com->files->hamster@projecthamster.wordpress.com->metadata.json->name
+msgid "Project Hamster Applet"
+msgstr ""
+
+#. pomodoro@gregfreeman.org->files->pomodoro@gregfreeman.org->metadata.json->name
+msgid "Pomodoro Timer"
+msgstr ""
+
+#. pomodoro@gregfreeman.org->files->pomodoro@gregfreeman.org->metadata.json->description
+msgid "Great tool for boosted productivity!"
+msgstr ""
+
+#. download-and-upload-speed@cardsurf->files->download-and-upload-
+#. speed@cardsurf->metadata.json->description
+#. download-and-upload-speed@cardsurf->files->download-and-upload-
+#. speed@cardsurf->metadata.json->description
+msgid "Shows usage of a network interface"
+msgstr ""
+
+#. download-and-upload-speed@cardsurf->files->download-and-upload-
+#. speed@cardsurf->metadata.json->name
+#. download-and-upload-speed@cardsurf->files->download-and-upload-
+#. speed@cardsurf->metadata.json->name
+msgid "Download and upload speed"
+msgstr ""
+
+#. vpnLookOut@claudiux->files->vpnLookOut@claudiux->metadata.json->name
+msgid "VPN Look-Out Applet"
+msgstr ""
+
+#. vpnLookOut@claudiux->files->vpnLookOut@claudiux->metadata.json->description
+msgid ""
+"A Cinnamon applet that watches over the VPN link, displays its status, "
+"allows to connect at start-up to the last VPN used, allows to reconnect the "
+"VPN link if it incidentally drops, and can stop or restart VPN-related apps "
+"according to the state of the VPN."
+msgstr ""
+
+#. octopussy@centurix->files->octopussy@centurix->metadata.json->description
+msgid "An applet to manage OctoPrint."
+msgstr ""
+
+#. octopussy@centurix->files->octopussy@centurix->metadata.json->name
+msgid "OctoPrint manager"
+msgstr ""
+
+#. cryptocoin@guantanamoe->files->cryptocoin@guantanamoe->metadata.json->name
+msgid "Cryptocoin"
+msgstr ""
+
+#. cryptocoin@guantanamoe->files->cryptocoin@guantanamoe->metadata.json->description
+msgid "Monitor current price and trends of cryptocurrencies"
+msgstr ""
+
+#. timeout@narutrey->files->timeout@narutrey->metadata.json->name
+msgid "Time Out"
+msgstr ""
+
+#. timeout@narutrey->files->timeout@narutrey->metadata.json->description
+msgid "Automatically controlled time outs and breaks"
+msgstr ""
+
+#. hwmonitor@sylfurd->files->hwmonitor@sylfurd->metadata.json->description
+msgid ""
+"Displaying realtime system information (CPU, memory, network and disk load)."
+msgstr ""
+
+#. hwmonitor@sylfurd->files->hwmonitor@sylfurd->metadata.json->name
+msgid "Graphical hardware monitor"
+msgstr ""
+
+#. github-projects@morgan-design.com->files->github-projects@morgan-
+#. design.com->metadata.json->name
+#. github-projects@morgan-design.com->files->github-projects@morgan-
+#. design.com->metadata.json->name
+msgid "Github Explorer"
+msgstr ""
+
+#. github-projects@morgan-design.com->files->github-projects@morgan-
+#. design.com->metadata.json->description
+#. github-projects@morgan-design.com->files->github-projects@morgan-
+#. design.com->metadata.json->description
+msgid "Click on the applet to explore your Public Github repositories"
+msgstr ""
+
+#. sync@szlldm->files->sync@szlldm->metadata.json->description
+msgid ""
+"Monitor yet unwritten cached data. Click on the applet to sync (write out "
+"cached data). Useful when copying large files to slow removable medium(e.g. "
+"pendrive)."
+msgstr ""
+
+#. sync@szlldm->files->sync@szlldm->metadata.json->name
+msgid "Sync"
+msgstr ""
+
+#. todo@threefi->files->todo@threefi->metadata.json->description
+msgid "a simple todo list ticker for cinammon"
+msgstr ""
+
+#. todo@threefi->files->todo@threefi->metadata.json->name
+msgid "Todo"
+msgstr ""
+
+#. ifstat@tagadan->files->ifstat@tagadan->metadata.json->description
+msgid "Show your internet usage in a smartphone style"
+msgstr ""
+
+#. ifstat@tagadan->files->ifstat@tagadan->metadata.json->name
+msgid "Tight Network Usage Indicator"
+msgstr ""
+
+#. restart-cinnamon@kolle->files->restart-cinnamon@kolle->metadata.json->name
+msgid "Restart Cinnamon"
+msgstr ""
+
+#. restart-cinnamon@kolle->files->restart-
+#. cinnamon@kolle->metadata.json->description
+#. restart-cinnamon@kolle->files->restart-
+#. cinnamon@kolle->metadata.json->description
+msgid "Click on the applet to restart Cinnamon"
+msgstr ""
+
+#. restart-cinnamon@kolle->files->restart-
+#. cinnamon@kolle->metadata.json->contributors
+#. restart-cinnamon@kolle->files->restart-
+#. cinnamon@kolle->metadata.json->contributors
+msgid "bimsebasse: added symbolic icon"
+msgstr ""
+
+#. weather@mockturtl->files->weather@mockturtl->metadata.json->name
+msgid "Weather"
+msgstr ""
+
+#. weather@mockturtl->files->weather@mockturtl->metadata.json->description
+msgid "View your local weather forecast"
+msgstr ""
+
+#. asl@santiago->files->asl@santiago->metadata.json->name
+msgid "American Sign Language vocabulary"
+msgstr ""
+
+#. asl@santiago->files->asl@santiago->metadata.json->description
+msgid "Information to American Sign Language vocabulary"
+msgstr ""
+
+#. batterymonitor@pdcurtis->files->batterymonitor@pdcurtis->metadata.json->description
+msgid "Displays Charge as Percentage and allows Alerts and Actions"
+msgstr ""
+
+#. batterymonitor@pdcurtis->files->batterymonitor@pdcurtis->metadata.json->name
+msgid "Battery  Applet with Monitoring and Shutdown (BAMS)"
+msgstr ""
+
+#. bettersettings@bownz->files->bettersettings@bownz->metadata.json->name
+msgid "Better Cinnamon Settings"
+msgstr ""
+
+#. bettersettings@bownz->files->bettersettings@bownz->metadata.json->description
+msgid "A Better Cinnamon Settings"
+msgstr ""
+
+#. backgroundroll@Sokawaii25->files->backgroundroll@Sokawaii25->metadata.json->name
+msgid "Background Roll"
+msgstr ""
+
+#. backgroundroll@Sokawaii25->files->backgroundroll@Sokawaii25->metadata.json->description
+msgid ""
+"Changes the background randomly using the images in ~/Images/backgrounds\n"
+"Middle-click lets you roll back to previous background"
+msgstr ""
+
+#. suspend@janax->files->suspend@janax->metadata.json->description
+msgid "Immediately suspends the computer"
+msgstr ""
+
+#. suspend@janax->files->suspend@janax->metadata.json->name
+msgid "Suspend computer"
+msgstr ""
+
+#. MessagingMenuV3@blub->files->MessagingMenuV3@blub->metadata.json->name
+msgid "Messaging Menu"
+msgstr ""
+
+#. MessagingMenuV3@blub->files->MessagingMenuV3@blub->metadata.json->description
+msgid "Messaging Menu applet"
+msgstr ""
+
+#. vnstat@linuxmint.com->files->vnstat@linuxmint.com->metadata.json->name
+msgid "Network usage monitor"
+msgstr ""
+
+#. vnstat@linuxmint.com->files->vnstat@linuxmint.com->metadata.json->description
+msgid "Network usage monitor using vnstat"
+msgstr ""
+
+#. CommandRunner@appdevsw->files->CommandRunner@appdevsw->metadata.json->description
+msgid ""
+"Applet runs script or application periodically and displays its output on "
+"the taskbar"
+msgstr ""
+
+#. CommandRunner@appdevsw->files->CommandRunner@appdevsw->metadata.json->name
+msgid "CommandRunner"
+msgstr ""
+
+#. gpaste-reloaded@feuerfuchs.eu->files->gpaste-
+#. reloaded@feuerfuchs.eu->metadata.json->description
+#. gpaste-reloaded@feuerfuchs.eu->files->gpaste-
+#. reloaded@feuerfuchs.eu->metadata.json->description
+msgid ""
+"A complete rewrite of the GPaste applet based on the Gnome Shell extension"
+msgstr ""
+
+#. gpaste-reloaded@feuerfuchs.eu->files->gpaste-
+#. reloaded@feuerfuchs.eu->metadata.json->name
+#. gpaste-reloaded@feuerfuchs.eu->files->gpaste-
+#. reloaded@feuerfuchs.eu->metadata.json->name
+msgid "GPaste Reloaded"
+msgstr ""
+
+#. mybookmarks@markbokil.com->files->mybookmarks@markbokil.com->metadata.json->name
+msgid "My Bookmarks"
+msgstr ""
+
+#. mybookmarks@markbokil.com->files->mybookmarks@markbokil.com->metadata.json->description
+msgid "Web apps launcher"
+msgstr ""
+
+#. collapsible-systray@feuerfuchs.eu->files->collapsible-
+#. systray@feuerfuchs.eu->metadata.json->description
+#. collapsible-systray@feuerfuchs.eu->files->collapsible-
+#. systray@feuerfuchs.eu->metadata.json->description
+msgid ""
+"A replacement for the abandoned System Tray Collapsible Cinnamon applet"
+msgstr ""
+
+#. collapsible-systray@feuerfuchs.eu->files->collapsible-
+#. systray@feuerfuchs.eu->metadata.json->name
+#. collapsible-systray@feuerfuchs.eu->files->collapsible-
+#. systray@feuerfuchs.eu->metadata.json->name
+msgid "Collapsible Systray"
+msgstr ""
+
+#. cinnamon-multi-line-taskbar-applet->files->cinnamon-multi-line-taskbar-
+#. applet->metadata.json->name
+#. cinnamon-multi-line-taskbar-applet->files->cinnamon-multi-line-taskbar-
+#. applet->metadata.json->name
+msgid "Cinnamon Multi-Line Taskbar"
+msgstr ""
+
+#. cinnamon-multi-line-taskbar-applet->files->cinnamon-multi-line-taskbar-
+#. applet->metadata.json->description
+#. cinnamon-multi-line-taskbar-applet->files->cinnamon-multi-line-taskbar-
+#. applet->metadata.json->description
+msgid "https://github.com/posto/cinnamon-multi-line-taskbar-applet"
+msgstr ""
+
+#. xampp-panel@backids99->files->xampp-panel@backids99->metadata.json->name
+msgid "Xampp Panel Menu"
+msgstr ""
+
+#. xampp-panel@backids99->files->xampp-
+#. panel@backids99->metadata.json->description
+#. xampp-panel@backids99->files->xampp-
+#. panel@backids99->metadata.json->description
+msgid "A Panel Menu for XAMPP Web Developers"
+msgstr ""
+
+#. CinnVIIStarkMenu@NikoKrause->files->CinnVIIStarkMenu@NikoKrause->metadata.json->name
+msgid "CinnVIIStarkMenu"
+msgstr ""
+
+#. CinnVIIStarkMenu@NikoKrause->files->CinnVIIStarkMenu@NikoKrause->metadata.json->description
+msgid ""
+"Cinnamon Menu with the look of the Windows 7 Start Menu or the MATE Menu"
+msgstr ""
+
+#. jalalicalendar@mohammad-sn->files->jalalicalendar@mohammad-
+#. sn->metadata.json->description
+#. jalalicalendar@mohammad-sn->files->jalalicalendar@mohammad-
+#. sn->metadata.json->description
+msgid "The Cinnamon Jalali (Iranian) calendar applet"
+msgstr ""
+
+#. jalalicalendar@mohammad-sn->files->jalalicalendar@mohammad-
+#. sn->metadata.json->name
+#. jalalicalendar@mohammad-sn->files->jalalicalendar@mohammad-
+#. sn->metadata.json->name
+msgid "Taghvim"
+msgstr ""
+
+#. sound150@claudiux->files->sound150@claudiux->metadata.json->name
+msgid "Sound 150%"
+msgstr ""
+
+#. sound150@claudiux->files->sound150@claudiux->metadata.json->description
+msgid ""
+"An applet, based on the Cinnamon one, to control sound (up to 150% of "
+"nominal volume) and music"
+msgstr ""
+
+#. workspace-grid@hernejj->files->workspace-grid@hernejj->metadata.json->name
+msgid "Workspace grid (2D) and switcher"
+msgstr ""
+
+#. workspace-grid@hernejj->files->workspace-
+#. grid@hernejj->metadata.json->description
+#. workspace-grid@hernejj->files->workspace-
+#. grid@hernejj->metadata.json->description
+msgid "2D workspace grid and switcher for Cinnamon"
+msgstr ""
+
+#. spices-notifier@germanfr->files->spices-
+#. notifier@germanfr->metadata.json->name
+#. spices-notifier@germanfr->files->spices-
+#. notifier@germanfr->metadata.json->name
+msgid "Spices notifier"
+msgstr ""
+
+#. spices-notifier@germanfr->files->spices-
+#. notifier@germanfr->metadata.json->description
+#. spices-notifier@germanfr->files->spices-
+#. notifier@germanfr->metadata.json->description
+msgid "Notifies of comments on the Cinnamon Spices website"
+msgstr ""
+
+#. radio@driglu4it->files->radio@driglu4it->metadata.json->name
+msgid "Radio++"
+msgstr ""
+
+#. radio@driglu4it->files->radio@driglu4it->metadata.json->description
+msgid "A simple radio applet for Cinnamon"
+msgstr ""
+
+#. commandLauncher@scollins->files->commandLauncher@scollins->metadata.json->name
+msgid "Command Launcher"
+msgstr ""
+
+#. commandLauncher@scollins->files->commandLauncher@scollins->metadata.json->description
+msgid "Lets you to run command-line commands with the click of a button"
+msgstr ""
+
+#. commandLauncher@scollins->files->commandLauncher@scollins->metadata.json->comments
+msgid ""
+"This is a simple multi-instance applet for Cinnamon which allows the user to"
+" launch commands as though from a command prompt with the click of a button."
+" Unlike a program launcher, which typically uses a .desktop to launch a "
+"program, Command Launcher uses a direct command-line command. This means you"
+" can use any command you could use from a terminal (eg run a script, launch "
+"program with complicated command-line arguments, etc)."
+msgstr ""
+
+#. diaspora-notif@douze12->files->diaspora-notif@douze12->metadata.json->name
+#. diaspora-notif@douze12->files->diaspora-
+#. notif@douze12->metadata.json->description
+#. diaspora-notif@douze12->files->diaspora-
+#. notif@douze12->metadata.json->description
+msgid "Diaspora* notifications"
+msgstr ""
+
+#. azan@fahri.nurul.id->files->azan@fahri.nurul.id->metadata.json->name
+msgid "Azan"
+msgstr ""
+
+#. azan@fahri.nurul.id->files->azan@fahri.nurul.id->metadata.json->description
+msgid "Azan is an Islamic prayer times application"
+msgstr ""
+
+#. bash-sensors@pkkk->files->bash-sensors@pkkk->metadata.json->name
+msgid "Bash Sensors"
+msgstr ""
+
+#. bash-sensors@pkkk->files->bash-sensors@pkkk->metadata.json->description
+msgid ""
+"Write your Bash commands to specify applet output (temperature sensors and "
+"not only!)"
+msgstr ""
+
+#. ScreenLocker@tuuxx->files->ScreenLocker@tuuxx->metadata.json->name
+msgid "Screen locker"
+msgstr ""
+
+#. ScreenLocker@tuuxx->files->ScreenLocker@tuuxx->metadata.json->description
+msgid "Click to lock the screen immediately"
+msgstr ""
+
+#. ScreenShot@tech71->files->ScreenShot@tech71->metadata.json->description
+msgid "Take a snapshot of your desktop or individual windows"
+msgstr ""
+
+#. ScreenShot@tech71->files->ScreenShot@tech71->metadata.json->name
+msgid "ScreenShot"
+msgstr ""
+
+#. multicore-sys-monitor@ccadeptic23->files->multicore-sys-
+#. monitor@ccadeptic23->metadata.json->name
+#. multicore-sys-monitor@ccadeptic23->files->multicore-sys-
+#. monitor@ccadeptic23->metadata.json->name
+msgid "Multi-Core System Monitor"
+msgstr ""
+
+#. multicore-sys-monitor@ccadeptic23->files->multicore-sys-
+#. monitor@ccadeptic23->metadata.json->description
+#. multicore-sys-monitor@ccadeptic23->files->multicore-sys-
+#. monitor@ccadeptic23->metadata.json->description
+msgid ""
+"Displays in realtime the cpu usage for each core/cpu and overall memory "
+"usage."
+msgstr ""
+
+#. disk-read-and-write-speed@cardsurf->files->disk-read-and-write-
+#. speed@cardsurf->metadata.json->description
+#. disk-read-and-write-speed@cardsurf->files->disk-read-and-write-
+#. speed@cardsurf->metadata.json->description
+msgid "Shows usage of a disk"
+msgstr ""
+
+#. disk-read-and-write-speed@cardsurf->files->disk-read-and-write-
+#. speed@cardsurf->metadata.json->name
+#. disk-read-and-write-speed@cardsurf->files->disk-read-and-write-
+#. speed@cardsurf->metadata.json->name
+msgid "Disk read and write speed"
+msgstr ""
+
+#. network@brownsr->files->network@brownsr->metadata.json->name
+msgid "Network"
+msgstr ""
+
+#. network@brownsr->files->network@brownsr->metadata.json->description
+msgid "Show network"
+msgstr ""
+
+#. calendar@simonwiles.net->files->calendar@simonwiles.net->metadata.json->name
+msgid "World Clock Calendar"
+msgstr ""
+
+#. calendar@simonwiles.net->files->calendar@simonwiles.net->metadata.json->description
+msgid ""
+"Fork of the Cinnamon calendar applet with support for displaying multiple "
+"timezones"
+msgstr ""
+
+#. Mint-Unsplash-Background@omidmaldar->files->Mint-Unsplash-
+#. Background@omidmaldar->metadata.json->name
+#. Mint-Unsplash-Background@omidmaldar->files->Mint-Unsplash-
+#. Background@omidmaldar->metadata.json->name
+msgid "Mint Unsplash Background"
+msgstr ""
+
+#. Mint-Unsplash-Background@omidmaldar->files->Mint-Unsplash-
+#. Background@omidmaldar->metadata.json->description
+#. Mint-Unsplash-Background@omidmaldar->files->Mint-Unsplash-
+#. Background@omidmaldar->metadata.json->description
+msgid ""
+"Click and change your Mint background image with a random photo originated "
+"from Unsplash.com "
+msgstr ""
+
+#. sshconnect@foobar-beer->files->sshconnect@foobar-beer->metadata.json->name
+msgid "SSH Connect"
+msgstr ""
+
+#. sshconnect@foobar-beer->files->sshconnect@foobar-
+#. beer->metadata.json->description
+#. sshconnect@foobar-beer->files->sshconnect@foobar-
+#. beer->metadata.json->description
+msgid ""
+"Open SSH shell based on applet configuration table with optional "
+"configuration of console profile and flags per each connection."
+msgstr ""
+
+#. ddcci-monitor-control@andr35->files->ddcci-monitor-
+#. control@andr35->metadata.json->name
+#. ddcci-monitor-control@andr35->files->ddcci-monitor-
+#. control@andr35->metadata.json->name
+msgid "DDC/CI Monitor Brightness"
+msgstr ""
+
+#. ddcci-monitor-control@andr35->files->ddcci-monitor-
+#. control@andr35->metadata.json->description
+#. ddcci-monitor-control@andr35->files->ddcci-monitor-
+#. control@andr35->metadata.json->description
+msgid "Adjust external monitor brightness and contrast"
+msgstr ""
+
+#. graphicsCenter@scollins->files->graphicsCenter@scollins->metadata.json->name
+msgid "Graphics Center"
+msgstr ""
+
+#. graphicsCenter@scollins->files->graphicsCenter@scollins->metadata.json->description
+msgid "Provides an easy and fast resource for all your picture needs"
+msgstr ""
+
+#. graphicsCenter@scollins->files->graphicsCenter@scollins->metadata.json->comments
+msgid ""
+"Graphics Center is a feature-rich, cross-platform Cinnamon applet that "
+"provides easy aceess to all of your graphics programs and pictures. Feel "
+"free to contribute by submitting pull requests, bug reports and feature "
+"requests to my github repo."
+msgstr ""
+
+#. notification-mute@jgillula->files->notification-
+#. mute@jgillula->metadata.json->name
+#. notification-mute@jgillula->files->notification-
+#. mute@jgillula->metadata.json->name
+msgid "Notification Mute"
+msgstr ""
+
+#. notification-mute@jgillula->files->notification-
+#. mute@jgillula->metadata.json->description
+#. notification-mute@jgillula->files->notification-
+#. mute@jgillula->metadata.json->description
+msgid "Click to mute notifications, click again to unmute"
+msgstr ""
+
+#. ctrl4docker@hoffis-eck.de->files->ctrl4docker@hoffis-
+#. eck.de->metadata.json->name
+#. ctrl4docker@hoffis-eck.de->files->ctrl4docker@hoffis-
+#. eck.de->metadata.json->name
+msgid "Docker Control"
+msgstr ""
+
+#. ctrl4docker@hoffis-eck.de->files->ctrl4docker@hoffis-
+#. eck.de->metadata.json->description
+#. ctrl4docker@hoffis-eck.de->files->ctrl4docker@hoffis-
+#. eck.de->metadata.json->description
+msgid "Activates/Deactivates Docker Container"
+msgstr ""
+
+#. mailnagapplet@ozderya.net->files->mailnagapplet@ozderya.net->metadata.json->name
+msgid "Mailnag"
+msgstr ""
+
+#. mailnagapplet@ozderya.net->files->mailnagapplet@ozderya.net->metadata.json->description
+msgid "Mailnag mail notifier applet"
+msgstr ""
+
+#. smallcalc_applet@lerc.sds->files->smallcalc_applet@lerc.sds->metadata.json->name
+msgid "SmallCalc"
+msgstr ""
+
+#. smallcalc_applet@lerc.sds->files->smallcalc_applet@lerc.sds->metadata.json->description
+msgid "A nice compact popup calculator"
+msgstr ""
+
+#. SettingsPlus@lusito.info->files->SettingsPlus@lusito.info->metadata.json->name
+msgid "Settings Plus"
+msgstr ""
+
+#. SettingsPlus@lusito.info->files->SettingsPlus@lusito.info->metadata.json->description
+msgid "A Customizable Settings Menu"
+msgstr ""
+
+#. hideable-applets@cardsurf->files->hideable-
+#. applets@cardsurf->metadata.json->description
+#. hideable-applets@cardsurf->files->hideable-
+#. applets@cardsurf->metadata.json->description
+msgid "Hides applets to tray"
+msgstr ""
+
+#. hideable-applets@cardsurf->files->hideable-
+#. applets@cardsurf->metadata.json->name
+#. hideable-applets@cardsurf->files->hideable-
+#. applets@cardsurf->metadata.json->name
+msgid "Hideable applets"
+msgstr ""
+
+#. pa-equalizer@jschug.com->files->pa-
+#. equalizer@jschug.com->metadata.json->name
+#. pa-equalizer@jschug.com->files->pa-
+#. equalizer@jschug.com->metadata.json->name
+msgid "Equalizer"
+msgstr ""
+
+#. pa-equalizer@jschug.com->files->pa-
+#. equalizer@jschug.com->metadata.json->description
+#. pa-equalizer@jschug.com->files->pa-
+#. equalizer@jschug.com->metadata.json->description
+msgid "An applet to control sound equalization"
+msgstr ""
+
+#. ShutdownMenuWithIcons@LLOBERA->files->ShutdownMenuWithIcons@LLOBERA->metadata.json->name
+msgid "Shutdown Menu With Icons"
+msgstr ""
+
+#. ShutdownMenuWithIcons@LLOBERA->files->ShutdownMenuWithIcons@LLOBERA->metadata.json->description
+msgid ""
+"An applet to help you shutdown, restart and suspend your system with single "
+"click"
+msgstr ""
+
+#. cpu-monitor-text@gnemonix->files->cpu-monitor-
+#. text@gnemonix->metadata.json->name
+#. cpu-monitor-text@gnemonix->files->cpu-monitor-
+#. text@gnemonix->metadata.json->name
+msgid "Simple CPU Monitor"
+msgstr ""
+
+#. cpu-monitor-text@gnemonix->files->cpu-monitor-
+#. text@gnemonix->metadata.json->description
+#. cpu-monitor-text@gnemonix->files->cpu-monitor-
+#. text@gnemonix->metadata.json->description
+msgid "A simple applet that displays the cpu usage."
+msgstr ""
+
+#. AutostartPrograms@spacy01->files->AutostartPrograms@spacy01->metadata.json->name
+msgid "Autostart programs"
+msgstr ""
+
+#. AutostartPrograms@spacy01->files->AutostartPrograms@spacy01->metadata.json->description
+msgid "Click here to add or remove programs to start with the session."
+msgstr ""
+
+#. cpufreq@mtwebster->files->cpufreq@mtwebster->metadata.json->name
+msgid "CPU Frequency Applet"
+msgstr ""
+
+#. cpufreq@mtwebster->files->cpufreq@mtwebster->metadata.json->description
+msgid "Display and control cpu frequency"
+msgstr ""
+
+#. kdeccc@Severga->files->kdeccc@Severga->metadata.json->name
+msgid "KDE Connect Control Center"
+msgstr ""
+
+#. kdeccc@Severga->files->kdeccc@Severga->metadata.json->description
+msgid "Applet to provide access to some KDE Connect functionality"
+msgstr ""
+
+#. localip@mrieracrespi->files->localip@mrieracrespi->metadata.json->name
+msgid "Local IPs"
+msgstr ""
+
+#. localip@mrieracrespi->files->localip@mrieracrespi->metadata.json->description
+#. localipswithsettings@edaubert->files->localipswithsettings@edaubert->metadata.json->description
+msgid "Shows local IP addresses."
+msgstr ""
+
+#. force-quit@cinnamon.org->files->force-
+#. quit@cinnamon.org->metadata.json->name
+#. force-quit@cinnamon.org->files->force-
+#. quit@cinnamon.org->metadata.json->name
+msgid "Force Quit"
+msgstr ""
+
+#. force-quit@cinnamon.org->files->force-
+#. quit@cinnamon.org->metadata.json->description
+#. force-quit@cinnamon.org->files->force-
+#. quit@cinnamon.org->metadata.json->description
+msgid ""
+"Click on the applet to launch xkill and force any window to quit immediately"
+msgstr ""
+
+#. location-detection@heimdall->files->location-
+#. detection@heimdall->metadata.json->description
+#. location-detection@heimdall->files->location-
+#. detection@heimdall->metadata.json->description
+msgid "Shows the geographic location of your public IP and country-flag."
+msgstr ""
+
+#. location-detection@heimdall->files->location-
+#. detection@heimdall->metadata.json->name
+#. location-detection@heimdall->files->location-
+#. detection@heimdall->metadata.json->name
+msgid "Location Detection + Flags"
+msgstr ""
+
+#. better-backgrounds@simonmicro->files->better-
+#. backgrounds@simonmicro->metadata.json->name
+#. better-backgrounds@simonmicro->files->better-
+#. backgrounds@simonmicro->metadata.json->name
+msgid "Better Backgrounds"
+msgstr ""
+
+#. better-backgrounds@simonmicro->files->better-
+#. backgrounds@simonmicro->metadata.json->description
+#. better-backgrounds@simonmicro->files->better-
+#. backgrounds@simonmicro->metadata.json->description
+msgid ""
+"Apply new backgrounds from Bing, Himawari 8, Picsum Photos, PlaceKitten.com,"
+" Unsplash.com or even whole websites - specify search tags, triggers and "
+"more!"
+msgstr ""
+
+#. temperature@fevimu->files->temperature@fevimu->metadata.json->name
+msgid "CPU Temperature Indicator"
+msgstr ""
+
+#. temperature@fevimu->files->temperature@fevimu->metadata.json->description
+msgid "Shows CPU Temperature"
+msgstr ""
+
+#. rust-menu@jerrywham->files->rust-menu@jerrywham->metadata.json->name
+msgid "Rust Developer Menu"
+msgstr ""
+
+#. rust-menu@jerrywham->files->rust-menu@jerrywham->metadata.json->description
+msgid "A Menu for Rust Developers"
+msgstr ""
+
+#. ipindicator@matus.benko@gmail.com->files->ipindicator@matus.benko@gmail.com->metadata.json->name
+msgid "IP Indicator"
+msgstr ""
+
+#. ipindicator@matus.benko@gmail.com->files->ipindicator@matus.benko@gmail.com->metadata.json->description
+msgid ""
+"Applet shows different icon for different public IP addresses. Useful when "
+"often using VPN."
+msgstr ""
+
+#. feeds@jonbrettdev.wordpress.com->files->feeds@jonbrettdev.wordpress.com->metadata.json->description
+msgid "Displays RSS news feeds"
+msgstr ""
+
+#. feeds@jonbrettdev.wordpress.com->files->feeds@jonbrettdev.wordpress.com->metadata.json->name
+msgid "Feeds Reader"
+msgstr ""
+
+#. wireguard@nicoulaj.net->files->wireguard@nicoulaj.net->metadata.json->name
+msgid "WireGuard"
+msgstr ""
+
+#. wireguard@nicoulaj.net->files->wireguard@nicoulaj.net->metadata.json->description
+msgid "Enable/disable WireGuard connections."
+msgstr ""
+
+#. localipswithsettings@edaubert->files->localipswithsettings@edaubert->metadata.json->name
+msgid "Local IPs with settings"
+msgstr ""
+
+#. brightness-and-gamma-applet@cardsurf->files->brightness-and-gamma-
+#. applet@cardsurf->metadata.json->description
+#. brightness-and-gamma-applet@cardsurf->files->brightness-and-gamma-
+#. applet@cardsurf->metadata.json->description
+msgid "Sets brightness and gamma levels of a screen"
+msgstr ""
+
+#. brightness-and-gamma-applet@cardsurf->files->brightness-and-gamma-
+#. applet@cardsurf->metadata.json->name
+#. brightness-and-gamma-applet@cardsurf->files->brightness-and-gamma-
+#. applet@cardsurf->metadata.json->name
+msgid "Brightness and gamma applet"
+msgstr ""
+
+#. dgs-bpivaty@gmail.com->files->dgs-
+#. bpivaty@gmail.com->metadata.json->description
+#. dgs-bpivaty@gmail.com->files->dgs-
+#. bpivaty@gmail.com->metadata.json->description
+msgid "Manage your DGS games"
+msgstr ""
+
+#. dgs-bpivaty@gmail.com->files->dgs-bpivaty@gmail.com->metadata.json->name
+msgid "DGS Applet"
+msgstr ""
+
+#. places-bookmarks@dmo60.de->files->places-
+#. bookmarks@dmo60.de->metadata.json->description
+#. places-bookmarks@dmo60.de->files->places-
+#. bookmarks@dmo60.de->metadata.json->description
+msgid "Access your places and bookmarks"
+msgstr ""
+
+#. places-bookmarks@dmo60.de->files->places-
+#. bookmarks@dmo60.de->metadata.json->name
+#. places-bookmarks@dmo60.de->files->places-
+#. bookmarks@dmo60.de->metadata.json->name
+msgid "Places"
+msgstr ""
+
+#. cinnamon-timer@jake1164->files->cinnamon-
+#. timer@jake1164->metadata.json->name
+#. cinnamon-timer@jake1164->files->cinnamon-
+#. timer@jake1164->metadata.json->name
+msgid "Timer with notifications"
+msgstr ""
+
+#. cinnamon-timer@jake1164->files->cinnamon-
+#. timer@jake1164->metadata.json->description
+#. cinnamon-timer@jake1164->files->cinnamon-
+#. timer@jake1164->metadata.json->description
+msgid "A timer app with visual and auditory notifications."
+msgstr ""
+
+#. Sensors@claudiux->files->Sensors@claudiux->metadata.json->name
+msgid "Sensors Monitor"
+msgstr ""
+
+#. Sensors@claudiux->files->Sensors@claudiux->metadata.json->description
+msgid ""
+"Displays the values of many computer sensors concerning Temperatures (CPU - "
+"GPU - Power Supply), Fan Speed, Voltages, Intrusions. Notifies you with "
+"color changes when a value reaches or exceeds its limit."
+msgstr ""
+
+#. website-notifier@cardsurf->files->website-
+#. notifier@cardsurf->metadata.json->description
+#. website-notifier@cardsurf->files->website-
+#. notifier@cardsurf->metadata.json->description
+msgid "Shows a notification when a website updates"
+msgstr ""
+
+#. website-notifier@cardsurf->files->website-
+#. notifier@cardsurf->metadata.json->name
+#. website-notifier@cardsurf->files->website-
+#. notifier@cardsurf->metadata.json->name
+msgid "Website notifier"
+msgstr ""
+
+#. computer@brownsr->files->computer@brownsr->metadata.json->name
+msgid "Computer"
+msgstr ""
+
+#. computer@brownsr->files->computer@brownsr->metadata.json->description
+msgid "Show files at computer level"
+msgstr ""
+
+#. softyubikey@yubiserver.include.gr->files->softyubikey@yubiserver.include.gr->metadata.json->name
+msgid "SoftYubikey"
+msgstr ""
+
+#. softyubikey@yubiserver.include.gr->files->softyubikey@yubiserver.include.gr->metadata.json->description
+msgid "Click on the applet to create a OTP"
+msgstr ""
+
+#. mylauncher@markbokil.com->files->mylauncher@markbokil.com->metadata.json->name
+msgid "My Launcher"
+msgstr ""
+
+#. mylauncher@markbokil.com->files->mylauncher@markbokil.com->metadata.json->description
+msgid "Personal app launcher."
+msgstr ""
+
+#. uptime@vatanuki.kun->files->uptime@vatanuki.kun->metadata.json->description
+msgid "A simple applet that displays uptime."
+msgstr ""
+
+#. uptime@vatanuki.kun->files->uptime@vatanuki.kun->metadata.json->name
+msgid "Up Time"
+msgstr ""
+
+#. nvidiaprime@pdcurtis->files->nvidiaprime@pdcurtis->metadata.json->description
+msgid ""
+"Displays which Graphics processor is active and nVidia GPU Temperature when "
+"active and in a horizontal panel"
+msgstr ""
+
+#. nvidiaprime@pdcurtis->files->nvidiaprime@pdcurtis->metadata.json->name
+msgid "nVidia Prime GPU Display"
+msgstr ""
+
+#. netusagemonitor@pdcurtis->files->netusagemonitor@pdcurtis->metadata.json->name
+msgid "Network Data Usage Monitor"
+msgstr ""
+
+#. netusagemonitor@pdcurtis->files->netusagemonitor@pdcurtis->metadata.json->description
+msgid ""
+"A Comprehensive Data Usage Monitor with alerts and cumulative data functions"
+msgstr ""
+
+#. rprego@rprego.com->files->rprego@rprego.com->metadata.json->name
+msgid "Display Switcher"
+msgstr ""
+
+#. rprego@rprego.com->files->rprego@rprego.com->metadata.json->description
+msgid "Switch display configuration on-the-fly"
+msgstr ""
+
+#. CustomPlaces@Nicolas01->files->CustomPlaces@Nicolas01->metadata.json->description
+msgid "A places drop-down list easily customisable"
+msgstr ""
+
+#. CustomPlaces@Nicolas01->files->CustomPlaces@Nicolas01->metadata.json->name
+msgid "Custom Places"
+msgstr ""
+
+#. ioDisk@ctrlesc->files->ioDisk@ctrlesc->metadata.json->name
+msgid "Disk Utilization"
+msgstr ""
+
+#. ioDisk@ctrlesc->files->ioDisk@ctrlesc->metadata.json->description
+msgid ""
+"Shows the current max disk I/O utilization in the panel and per device "
+"utilization in a popup menu."
+msgstr ""
+
+#. CustomApplicationsMenu@LLOBERA->files->CustomApplicationsMenu@LLOBERA->metadata.json->name
+msgid "Custom Applications Menu"
+msgstr ""
+
+#. CustomApplicationsMenu@LLOBERA->files->CustomApplicationsMenu@LLOBERA->metadata.json->description
+msgid "An applications drop-down list easily customisable"
+msgstr ""
+
+#. clean-show-desktop@filipetorresbr->files->clean-show-
+#. desktop@filipetorresbr->metadata.json->name
+#. clean-show-desktop@filipetorresbr->files->clean-show-
+#. desktop@filipetorresbr->metadata.json->name
+msgid "Clean Show Desktop"
+msgstr ""
+
+#. clean-show-desktop@filipetorresbr->files->clean-show-
+#. desktop@filipetorresbr->metadata.json->description
+#. clean-show-desktop@filipetorresbr->files->clean-show-
+#. desktop@filipetorresbr->metadata.json->description
+msgid ""
+"An Applet to show the Desktop in the style of Windows 10 but completely "
+"customizable"
+msgstr ""
+
+#. windowlist@cobinja.de->files->windowlist@cobinja.de->metadata.json->name
+msgid "CobiWindowList"
+msgstr ""
+
+#. windowlist@cobinja.de->files->windowlist@cobinja.de->metadata.json->description
+msgid "A window list with app grouping and window previews"
+msgstr ""
+
+#. printers@linux-man->files->printers@linux-man->metadata.json->description
+msgid "Manage Jobs and Printers"
+msgstr ""
+
+#. printers@linux-man->files->printers@linux-man->metadata.json->contributors
+msgid "Caldas Lopes"
+msgstr ""
+
+#. printers@linux-man->files->printers@linux-man->metadata.json->name
+msgid "Printers"
+msgstr ""
+
+#. separator2@zyzz->files->separator2@zyzz->metadata.json->name
+msgid "Separator2"
+msgstr ""
+
+#. separator2@zyzz->files->separator2@zyzz->metadata.json->description
+msgid "Use this applet to create a separator between your applets"
+msgstr ""
+
+#. lorem@vxstorm->files->lorem@vxstorm->metadata.json->name
+msgid "Lorem Pastesum"
+msgstr ""
+
+#. lorem@vxstorm->files->lorem@vxstorm->metadata.json->description
+msgid "Click to get a paragraph of Lorem Ipsum to your clipboard"
+msgstr ""
+
+#. color-picker@fmete->files->color-picker@fmete->metadata.json->description
+msgid ""
+"Use the color picker to select a color on the screen. The color value (HEX "
+"or RGB) will be copied to the clipboard."
+msgstr ""
+
+#. color-picker@fmete->files->color-picker@fmete->metadata.json->name
+msgid "Color Picker"
+msgstr ""
+
+#. scripts@paucapo.com->files->scripts@paucapo.com->metadata.json->name
+msgid "Scripts Menu"
+msgstr ""
+
+#. scripts@paucapo.com->files->scripts@paucapo.com->metadata.json->description
+msgid "Menu applet for starting scripts"
+msgstr ""
+
+#. standardIconNames@jerrywham->files->standardIconNames@jerrywham->metadata.json->name
+msgid "Standard icon names"
+msgstr ""
+
+#. standardIconNames@jerrywham->files->standardIconNames@jerrywham->metadata.json->description
+msgid "All standard icon names for applet developers"
+msgstr ""
+
+#. calendar@ccprog->files->calendar@ccprog->metadata.json->name
+msgid "Calendar with public Holidays"
+msgstr ""
+
+#. calendar@ccprog->files->calendar@ccprog->metadata.json->description
+msgid "Calendar applet with public holiday data provided by Enrico service"
+msgstr ""
+
+#. nextslide@yaya-cout->files->nextslide@yaya-cout->metadata.json->name
+msgid "Next slide"
+msgstr ""
+
+#. nextslide@yaya-cout->files->nextslide@yaya-cout->metadata.json->description
+msgid "Simple button to change background for the Cinnamon slideshow"
+msgstr ""
+
+#. BgRadio@spacy01->files->BgRadio@spacy01->metadata.json->description
+msgid ""
+"The most famous bulgarian radio and TV streams. Some of the streams are "
+"available only from bulgaria. To watch a TVs, you'll need to install "
+"rtmpdump and mpv packages."
+msgstr ""
+
+#. BgRadio@spacy01->files->BgRadio@spacy01->metadata.json->name
+msgid "Bulgarian Radio and TV Streams"
+msgstr ""
+
+#. kdecapplet@joejoetv->files->kdecapplet@joejoetv->metadata.json->name
+msgid "KDEConnect Applet"
+msgstr ""
+
+#. kdecapplet@joejoetv->files->kdecapplet@joejoetv->metadata.json->description
+msgid "Applet for interacting with Devices connected via KDE COnnect."
+msgstr ""
+
+#. kdecapplet@joejoetv->files->kdecapplet@joejoetv->metadata.json->comments
+msgid "Requires 'zenity' for some features."
+msgstr ""
+
+#. menu@csknet.org->files->menu@csknet.org->metadata.json->name
+msgid "CskMenu"
+msgstr ""
+
+#. menu@csknet.org->files->menu@csknet.org->metadata.json->description
+msgid "A simple command launcher menu"
+msgstr ""
+
+#. placesCenter@scollins->files->placesCenter@scollins->metadata.json->name
+msgid "Places Center"
+msgstr ""
+
+#. placesCenter@scollins->files->placesCenter@scollins->metadata.json->description
+msgid "Provides an easy-to-read layout to access your places"
+msgstr ""
+
+#. placesCenter@scollins->files->placesCenter@scollins->metadata.json->comments
+msgid ""
+"Places Center is a feature-rich, cross-platform Cinnamon applet that "
+"provides easy access to all of your most-used places. Feel free to "
+"contribute by submitting pull requests, bug reports and feature requests to "
+"my github repo."
+msgstr ""
+
+#. placesCenter@scollins->files->placesCenter@scollins->metadata.json->contributors
+msgid "kehugter - Added configurability to middle click"
+msgstr ""
+
+#. ShutdownApplet@DeathMD->files->ShutdownApplet@DeathMD->metadata.json->name
+msgid "Shutdown Applet"
+msgstr ""
+
+#. ShutdownApplet@DeathMD->files->ShutdownApplet@DeathMD->metadata.json->description
+msgid "An applet to shutdown, restart and suspend your system."
+msgstr ""
+
+#. InternetTimeApplet@stefan->files->InternetTimeApplet@stefan->metadata.json->name
+msgid "Internet Time"
+msgstr ""
+
+#. InternetTimeApplet@stefan->files->InternetTimeApplet@stefan->metadata.json->description
+msgid "Shows the Internet Time in .beat"
+msgstr ""
+
+#. gnote@brett-smith->files->gnote@brett-smith->metadata.json->name
+msgid "Gnote"
+msgstr ""
+
+#. gnote@brett-smith->files->gnote@brett-smith->metadata.json->description
+msgid "Lists notes, view notes, create notes and search notes."
+msgstr ""
+
+#. turn-off-monitor@zablotski->files->turn-off-
+#. monitor@zablotski->metadata.json->name
+#. turn-off-monitor@zablotski->files->turn-off-
+#. monitor@zablotski->metadata.json->name
+msgid "Turn Off Monitor"
+msgstr ""
+
+#. turn-off-monitor@zablotski->files->turn-off-
+#. monitor@zablotski->metadata.json->description
+#. turn-off-monitor@zablotski->files->turn-off-
+#. monitor@zablotski->metadata.json->description
+msgid "Click on the applet to turn off monitor"
+msgstr ""
+
+#. devutils@fogl->files->devutils@fogl->metadata.json->description
+msgid "Development Utils Applet for Cinnamon"
+msgstr ""
+
+#. devutils@fogl->files->devutils@fogl->metadata.json->name
+msgid "Development Utils"
+msgstr ""
+
+#. sticky@scollins->files->sticky@scollins->metadata.json->name
+msgid "Sticky Notes"
+msgstr ""
+
+#. sticky@scollins->files->sticky@scollins->metadata.json->description
+msgid "Applet that allows you to manage desktop notes"
+msgstr ""
+
+#. sticky@scollins->files->sticky@scollins->metadata.json->comments
+msgid ""
+"This applet is designed to be a simple, quick, and easy-to-use note utility."
+" While there is some customization available, the emphasis is on making it "
+"feel as smooth and easy to use as possible."
+msgstr ""
+
+#. betterlock->files->betterlock->metadata.json->description
+msgid ""
+"Shows whether caps lock/num lock is on, and displays a notification when "
+"these change."
+msgstr ""
+
+#. betterlock->files->betterlock->metadata.json->name
+msgid "Num Lock/Caps Lock indicator with notifications"
+msgstr ""
+
+#. serviceLauncher@hulygun->files->serviceLauncher@hulygun->metadata.json->description
+msgid "Description"
+msgstr ""
+
+#. serviceLauncher@hulygun->files->serviceLauncher@hulygun->metadata.json->name
+msgid "Service Launcher"
+msgstr ""
+
+#. profile-switcher@pixunil->files->profile-
+#. switcher@pixunil->metadata.json->description
+#. profile-switcher@pixunil->files->profile-
+#. switcher@pixunil->metadata.json->description
+msgid "Change your settings profile"
+msgstr ""
+
+#. profile-switcher@pixunil->files->profile-
+#. switcher@pixunil->metadata.json->name
+#. profile-switcher@pixunil->files->profile-
+#. switcher@pixunil->metadata.json->name
+msgid "Profile switcher"
+msgstr ""
+
+#. places-with-terminal@mtwebster->files->places-with-
+#. terminal@mtwebster->metadata.json->name
+#. places-with-terminal@mtwebster->files->places-with-
+#. terminal@mtwebster->metadata.json->name
+msgid "Places with Terminal Launcher"
+msgstr ""
+
+#. places-with-terminal@mtwebster->files->places-with-
+#. terminal@mtwebster->metadata.json->description
+#. places-with-terminal@mtwebster->files->places-with-
+#. terminal@mtwebster->metadata.json->description
+msgid ""
+"Access your places and bookmarks, or launch a terminal at that location"
+msgstr ""
+
+#. nightscout@ranneft->files->nightscout@ranneft->metadata.json->description
+msgid "Fetches API from your Nightscout site and showing BG"
+msgstr ""
+
+#. nightscout@ranneft->files->nightscout@ranneft->metadata.json->name
+msgid "Nightscout"
+msgstr ""
+
+#. stopwatch@pdcurtis->files->stopwatch@pdcurtis->metadata.json->description
+msgid ""
+"Allows one to time activities such as the time online with multiple "
+"instances possible"
+msgstr ""
+
+#. stopwatch@pdcurtis->files->stopwatch@pdcurtis->metadata.json->name
+msgid "Stopwatch for Cinnamon"
+msgstr ""
+
+#. sshlauncher@sumo->files->sshlauncher@sumo->metadata.json->name
+msgid "SSH Launcher"
+msgstr ""
+
+#. sshlauncher@sumo->files->sshlauncher@sumo->metadata.json->description
+msgid "An applet to connect to SSH hosts configured in ~/.ssh/config"
+msgstr ""
+
+#. ThemeRefresh@JosephM->files->ThemeRefresh@JosephM->metadata.json->name
+msgid "Reload Current Theme"
+msgstr ""
+
+#. ThemeRefresh@JosephM->files->ThemeRefresh@JosephM->metadata.json->description
+msgid "A simple applet that allows you to refresh the current Cinnamon Theme"
+msgstr ""
+
+#. back-up_state@natsakis.com->files->back-
+#. up_state@natsakis.com->metadata.json->description
+#. back-up_state@natsakis.com->files->back-
+#. up_state@natsakis.com->metadata.json->description
+msgid ""
+"Probes for the state of a certain rsync back-up by checking the exit status "
+"of the log file"
+msgstr ""
+
+#. back-up_state@natsakis.com->files->back-
+#. up_state@natsakis.com->metadata.json->name
+#. back-up_state@natsakis.com->files->back-
+#. up_state@natsakis.com->metadata.json->name
+msgid "Back-up State"
+msgstr ""
+
+#. mem-monitor-text@datanom.net->files->mem-monitor-
+#. text@datanom.net->metadata.json->name
+#. mem-monitor-text@datanom.net->files->mem-monitor-
+#. text@datanom.net->metadata.json->name
+msgid "Simple Memory Monitor"
+msgstr ""
+
+#. mem-monitor-text@datanom.net->files->mem-monitor-
+#. text@datanom.net->metadata.json->description
+#. mem-monitor-text@datanom.net->files->mem-monitor-
+#. text@datanom.net->metadata.json->description
+msgid "A simple applet that displays the memory usage."
+msgstr ""
+
+#. qredshift@quintao->files->qredshift@quintao->metadata.json->name
+msgid "QRedshift"
+msgstr ""
+
+#. qredshift@quintao->files->qredshift@quintao->metadata.json->description
+msgid ""
+"Sets brightness, gamma levels and color temperature with Redshift.\n"
+"This applet conflicts with redshift-gtk, make sure you remove it."
+msgstr ""
+
+#. window-list@zeripath.sdf-eu.org->files->window-list@zeripath.sdf-
+#. eu.org->metadata.json->name
+#. window-list@zeripath.sdf-eu.org->files->window-list@zeripath.sdf-
+#. eu.org->metadata.json->name
+msgid "Zeripaths Window list"
+msgstr ""
+
+#. window-list@zeripath.sdf-eu.org->files->window-list@zeripath.sdf-
+#. eu.org->metadata.json->description
+#. window-list@zeripath.sdf-eu.org->files->window-list@zeripath.sdf-
+#. eu.org->metadata.json->description
+msgid "Zeripaths variant of Cinnamon window list"
+msgstr ""
+
+#. vboxlauncher@mockturtl->files->vboxlauncher@mockturtl->metadata.json->name
+msgid "Vbox Launcher"
+msgstr ""
+
+#. vboxlauncher@mockturtl->files->vboxlauncher@mockturtl->metadata.json->description
+msgid "An applet to launch virtual machines."
+msgstr ""
