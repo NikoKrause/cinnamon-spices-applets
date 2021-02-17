@@ -1,0 +1,637 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-04 14:57+0000\n"
+"PO-Revision-Date: 2021-02-09 14:46+0100\n"
+"Last-Translator: Kálmán „KAMI” Szalai <kami9811@gmail.com>\n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+
+msgid "Type to search..."
+msgstr "Gépeljen a kereséshez…"
+
+msgid "Initializing"
+msgstr "Előkészítés"
+
+msgid "No description available"
+msgstr "Nem áll rendelkezésre leírás"
+
+msgid "All Applications"
+msgstr "Minden alkalmazás"
+
+msgid "Places"
+msgstr "Helyek"
+
+msgid "Recent Files"
+msgstr "Legutóbbi fájlok"
+
+msgid "Bookmarks"
+msgstr "Könyvjelzők"
+
+msgid "Favorite Apps"
+msgstr "Kedvenc alkalmazások"
+
+msgid "gir1.2-gda-5.0 package required for Firefox and Midori bookmarks."
+msgstr ""
+"A „gir1.2-gda-5.0” csomag szükséges a Firefox és Midori könyvjelzők "
+"megjelenítéséhez."
+
+msgid "Clear List"
+msgstr "Lista törlése"
+
+#, fuzzy
+msgid "No recent files"
+msgstr "Legutóbbi fájlok váltása"
+
+msgid "Account details"
+msgstr "Fiók részletek"
+
+msgid "Grid View"
+msgstr "Rács nézet"
+
+msgid "List View"
+msgstr "Listanézet"
+
+msgid "Switch to grid view"
+msgstr "Váltás a rácsnézetre"
+
+msgid "Switch to list view"
+msgstr "Váltás listanézetre"
+
+msgid "Lock Screen"
+msgstr "Zárolási képernyő"
+
+msgid "Lock the screen"
+msgstr "A képernyő zárolása"
+
+msgid "Logout"
+msgstr "Kijelentkezés"
+
+msgid "Leave the session"
+msgstr "Kilépés a munkamenetből"
+
+msgid "Quit"
+msgstr "Kilépés"
+
+msgid "Shutdown the computer"
+msgstr "Számítógép kikapcsolása"
+
+msgid "Home"
+msgstr "Otthoni"
+
+msgid "Computer"
+msgstr "Számítógép"
+
+msgid "Browse network"
+msgstr "Hálózat tallózása"
+
+msgid "Run with NVIDIA GPU"
+msgstr "NVIDIA GPU használatával"
+
+msgid "Add to panel"
+msgstr "Hozzáadás a panelhez"
+
+msgid "Add to desktop"
+msgstr "Hozzáadás az asztalhoz"
+
+msgid "Remove from favorites"
+msgstr "Eltávolítás a kedvencek közül"
+
+msgid "Add to favorites"
+msgstr "Hozzáadás a kedvencekhez"
+
+msgid "Uninstall"
+msgstr "Eltávolítás"
+
+msgid "This file is no longer available"
+msgstr ""
+
+msgid "Open with"
+msgstr ""
+
+#, fuzzy
+msgid "Other application..."
+msgstr "Alkalmazásikonok megjelenítése"
+
+msgid "Menu"
+msgstr "Menü"
+
+#, fuzzy
+msgid "Clear list"
+msgstr "Lista törlése"
+
+#, fuzzy
+msgid "Clear all recent documents"
+msgstr "Nincsenek nemrég használt fájlok"
+
+msgid "No recent documents"
+msgstr "Nincsenek nemrég használt fájlok"
+
+#, fuzzy
+msgid "Favorites"
+msgstr "Kedvenc alkalmazások"
+
+#, fuzzy
+msgid "Lock screen"
+msgstr "Zárolási képernyő"
+
+#, fuzzy
+msgid "Shut down the computer"
+msgstr "Számítógép kikapcsolása"
+
+msgid "Reset category order"
+msgstr "Kategória sorrend visszaállítása"
+
+msgid "Open containing folder"
+msgstr ""
+
+msgid "Move to trash"
+msgstr ""
+
+msgid "Error while moving file to trash:"
+msgstr ""
+
+msgid "Find files..."
+msgstr ""
+
+msgid "Please wait..."
+msgstr "Kis türelmet…"
+
+msgid "Solution:"
+msgstr ""
+
+msgid "Click to copy"
+msgstr ""
+
+#, fuzzy
+msgid "Search web for"
+msgstr "Keresőszolgáltatók"
+
+msgid "Too many entries - showing first 1000 entries only"
+msgstr ""
+
+#, fuzzy
+msgid "All applications"
+msgstr "Minden alkalmazás"
+
+#, fuzzy
+msgid "Recent files"
+msgstr "Legutóbbi fájlok"
+
+#, fuzzy
+msgid "Favorite apps"
+msgstr "Kedvenc alkalmazások"
+
+msgid "Home folder"
+msgstr ""
+
+msgid "Open..."
+msgstr ""
+
+msgid "Open Containing Folder..."
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Start in"
+msgstr ""
+
+msgid "Select a folder"
+msgstr ""
+
+msgid "Follow symlinks"
+msgstr ""
+
+#, fuzzy
+msgid "Search hidden"
+msgstr "Keresőszolgáltatók"
+
+msgid "Use regular expressions"
+msgstr ""
+
+msgid "Stop"
+msgstr ""
+
+msgid "File"
+msgstr ""
+
+msgid "Path"
+msgstr ""
+
+msgid "Searching..."
+msgstr ""
+
+#, fuzzy
+msgid "Search Stopped"
+msgstr "Keresőszolgáltatók"
+
+msgid "Searching: "
+msgstr ""
+
+msgid "Error: insufficient permissions to read folder "
+msgstr ""
+
+msgid "Search Completed"
+msgstr ""
+
+msgid "Skipping"
+msgstr ""
+
+msgid " - direcotry already searched"
+msgstr ""
+
+msgid "Cinnamenu"
+msgstr "Cinnamenu"
+
+msgid ""
+"A flexible menu providing formatting options, web bookmarks, search provider "
+"support and fuzzy searching."
+msgstr ""
+"Rugalmas menü, amely formázási lehetőségeket, internetes könyvjelzőket, "
+"keresőszolgáltatói támogatást és homályos keresést biztosít."
+
+msgid "Behavior"
+msgstr "Viselkedés"
+
+msgid "Appearance"
+msgstr "Megjelenés"
+
+msgid "Layout and Content"
+msgstr "Elrendezés és tartalom"
+
+msgid "Search Providers"
+msgstr "Keresőszolgáltatók"
+
+msgid "No search provider extensions found"
+msgstr "Nem található egyetlen keresőszolgáltatás-kiterjesztés"
+
+msgid "Panel"
+msgstr "Panel"
+
+msgid "Layout"
+msgstr "Elrendezés"
+
+msgid "Content"
+msgstr "Tartalom"
+
+msgid "Recent files settings"
+msgstr "A legutóbbi fájlok beállításai"
+
+msgid "Open the menu editor"
+msgstr "Menüszerkesztő megnyitása"
+
+msgid "Use a custom icon"
+msgstr "Saját ikon használata"
+
+msgid "Use a custom icon in the panel"
+msgstr "Saját ikon használata a panelen"
+
+msgid "Panel icon"
+msgstr "Panel ikonra"
+
+msgid "Panel text"
+msgstr "Panel szövege"
+
+msgid "Text to show beside the panel icon"
+msgstr "A panel ikon mellett megjelenítendő szöveg"
+
+msgid "pixels"
+msgstr "képpont"
+
+msgid "Category icon size"
+msgstr "Kategória ikonméret"
+
+msgid "Applications list icon size"
+msgstr "Alkalmazás lista ikonméret"
+
+msgid "Applications grid icon size"
+msgstr "Alkalmazás rács ikonméret"
+
+msgid "Keyboard shortcut to open and close the menu"
+msgstr "Gyorsbillentyű a menü megnyitásához és bezárásához"
+
+msgid "Open menu on hover"
+msgstr "Nyissa meg a menüt lebegve"
+
+msgid "Open the menu when I move my mouse over the panel icon"
+msgstr "Menü megnyitása, ha az egérmutató a panel ikon felett van"
+
+msgid "milliseconds"
+msgstr "ezredmásodperc"
+
+msgid "Menu hover delay"
+msgstr "Menükövetés késleltetése"
+
+msgid "Use menu animations"
+msgstr "Menü animáció használata"
+
+msgid "Animate the menu on open and close"
+msgstr "Menüben megnyitása és bezárása animációval"
+
+msgid "Activate categories on click"
+msgstr "Kategória aktiválása egy kattintással"
+
+msgid "Activate categories on click instead of on hover"
+msgstr "Kategória aktiválása egy kattintással követés helyett"
+
+msgid "Enable autoscrolling"
+msgstr "Automatikus görgetés"
+
+msgid "Enable autoscrolling in application list"
+msgstr "Automatikus görgetés az alkalmazás listában"
+
+msgid "Show web bookmarks"
+msgstr "Webhely könyvjelzők megjelenítése"
+
+msgid "Show your browser's web bookmarks in the menu"
+msgstr "Mutassa meg a böngésző webes könyvjelzőit a menüben"
+
+msgid "Enable searching of open windows"
+msgstr "Megnyitott ablakok keresésének engedélyezése"
+
+msgid "Enable search providers"
+msgstr "Keresőszolgáltatók engedélyezése"
+
+msgid "Include search provider results in searches"
+msgstr "Keresőszolgáltatók által adott keresési eredmények megjelenítése"
+
+msgid "Example Search Providers"
+msgstr "Keresőszolgáltató példa"
+
+msgid "Startup applications view mode"
+msgstr "Indítópult alkalmazások megjelenítési módja"
+
+msgid "List"
+msgstr "Lista"
+
+msgid "Grid"
+msgstr "Rács"
+
+msgid "columns"
+msgstr "oszlop"
+
+msgid "Number of columns in apps grid"
+msgstr "Alkalmazás rács oszlopainak száma"
+
+msgid "Show bookmarks and places"
+msgstr "Könyvjelzők és helyek megjelenítése"
+
+msgid "Show bookmarks and places category in the menu"
+msgstr "Könyvjelzők és helyek kategóriák megjelenítése a menüben"
+
+msgid "Show application icons"
+msgstr "Alkalmazásikonok megjelenítése"
+
+msgid "Show category icons"
+msgstr "Kategóriaikonok megjelenítése"
+
+msgid "Show application descriptions under titles"
+msgstr "Alkalmazás leírások megjelenítése a cím alatt"
+
+msgid "Show tooltips"
+msgstr "Eszköztippek megjelenítése"
+
+msgid "Tooltip delay"
+msgstr "Eszköztippek késleltetése"
+
+msgid "Use a custom menu height"
+msgstr "Egyedi menü magasság használata"
+
+msgid "px"
+msgstr "px"
+
+msgid "Custom menu height"
+msgstr "Egyéni menü magasság"
+
+msgid "Applications view mode"
+msgstr "Alkalmazások nézet mód"
+
+msgid "View applications as list or grid"
+msgstr "Az alkalmazások megtekintése listaként vagy rácsként"
+
+msgid "Application description placement"
+msgstr "Alkalmazás leírások elhelyezkedése"
+
+msgid "Tooltips"
+msgstr "Eszköztippek"
+
+msgid "Under titles"
+msgstr "Cím alatt"
+
+msgid "None"
+msgstr "Nincs"
+
+msgid "Choose where to show application descriptions"
+msgstr "Válassza ki, hogy hol jelenjen meg az alkalmazás leírása"
+
+msgid "Session buttons location"
+msgstr "Munkamenet gombok elhelyezkedése"
+
+msgid "Top"
+msgstr "A csúcson"
+
+msgid "Bottom"
+msgstr "Alsó"
+
+msgid "Left"
+msgstr "Balra"
+
+msgid "Right"
+msgstr "Jobbra"
+
+#, fuzzy
+msgid "Choose where to show the session buttons (quit, logout, etc.)"
+msgstr ""
+"Válassza ki, hogy hol jelenjen meg a munkamenet (kilépés, kijelentkezés stb.)"
+
+msgid "Add favorites to session buttons"
+msgstr "Kedvencek hozzáadása a munkamenet gombjaihoz"
+
+msgid "Show your favorite app icons next to the session buttons"
+msgstr "Mutassa meg kedvenc alkalmazásikonjait a munkamenet gombjai mellett"
+
+#, fuzzy
+msgid "Show recent files"
+msgstr "Legutóbbi fájlok váltása"
+
+#, fuzzy
+msgid "Show recent files category in the menu"
+msgstr "Könyvjelzők és helyek kategóriák megjelenítése a menüben"
+
+msgid ""
+"Show your browser's web bookmarks in the menu.\n"
+"Note: Install package gir1.2-gda-5.0 to read firefox bookmarks."
+msgstr ""
+
+#, fuzzy
+msgid "Show favorite apps category"
+msgstr "Indítási kategória"
+
+#, fuzzy
+msgid "Show your favorite apps category in the menu"
+msgstr "Könyvjelzők és helyek kategóriák megjelenítése a menüben"
+
+msgid "Show home folder"
+msgstr ""
+
+#, fuzzy
+msgid "Show home folder category in the menu"
+msgstr "Könyvjelzők és helyek kategóriák megjelenítése a menüben"
+
+msgid "Always open menu on favorite apps"
+msgstr ""
+
+msgid "Always open the menu with favorite apps category selected"
+msgstr ""
+
+#, fuzzy
+msgid "Autoscroll the application list on mouse hover"
+msgstr "Automatikus görgetés az alkalmazás listában"
+
+msgid "Web search option"
+msgstr ""
+
+msgid "Google"
+msgstr ""
+
+msgid "Bing"
+msgstr ""
+
+msgid "Yahoo"
+msgstr ""
+
+msgid "DuckDuckGo"
+msgstr ""
+
+msgid "Show an internet search option in search results"
+msgstr ""
+
+#, fuzzy
+msgid "Enable emoji search"
+msgstr "Keresőszolgáltatók engedélyezése"
+
+msgid "Show emojis in search results"
+msgstr ""
+
+msgid "Show hidden files"
+msgstr ""
+
+msgid "Show hidden files in folder view"
+msgstr ""
+
+#, fuzzy
+msgid "Use a custom icon size"
+msgstr "Saját ikon használata"
+
+#, fuzzy
+msgid "Use a custom size for the panel icon"
+msgstr "Saját ikon használata a panelen"
+
+#, fuzzy
+msgid "Panel icon size"
+msgstr "Panel ikonra"
+
+#, fuzzy
+msgid "Choose a custom size for the panel icon"
+msgstr "Saját ikon használata a panelen"
+
+#, fuzzy
+msgid "Session buttons icon size"
+msgstr "Munkamenet gombok elhelyezkedése"
+
+#, fuzzy
+msgid "Use session buttons box style"
+msgstr "Munkamenet gombok elhelyezkedése"
+
+#~ msgid "Remove favorite"
+#~ msgstr "Távolítsa el a kedvencet"
+
+#~ msgid ""
+#~ "Made possible thanks to the efforts of contributors to the Cinnamon menu, "
+#~ "Gnomenu, and the contributors to projects they derived from."
+#~ msgstr ""
+#~ "A Cinnamon menü, a Gnomenu és a belőlük származó projekteken dolgozó "
+#~ "hozzájárulóknak köszönhetően érhető el."
+
+#~ msgid "Failed to launch \"%s\""
+#~ msgstr "„%s” indítása meghiúsult"
+
+#~ msgid "Press this button to customize your privacy settings."
+#~ msgstr "Nyomja meg ezt a gombot az adatvédelem testreszabásához."
+
+#~ msgid "Press this button to customize your menu entries."
+#~ msgstr "Nyomja meg ezt a gombot a menüelemek testreszabásához."
+
+#~ msgid "Unchecking this allows the theme to set the icon"
+#~ msgstr "A kijelölés megszüntetésével a téma állíthat be ikont"
+
+#~ msgid "Icon"
+#~ msgstr "Ikon"
+
+#~ msgid "Set the custom menu button icon name"
+#~ msgstr "Egyedi menü gomb ikonjának beállítása"
+
+#~ msgid "Enable opening the menu when the mouse enters the applet"
+#~ msgstr "Menü megnyitása, ha az egérmutató a kisalkalmazás felett van"
+
+#~ msgid "Delay between switching categories"
+#~ msgstr "Késleltetés a kategóriák közötti váltásnál"
+
+#~ msgid ""
+#~ "When enabled, category views are activated on click instead of on hover."
+#~ msgstr ""
+#~ "Ha engedélyezve van, a kategória nézeteket kattintással aktiválják, nem "
+#~ "pedig a lebegtetést."
+
+#~ msgid ""
+#~ "Choose whether or not to enable smooth autoscrolling in the application "
+#~ "list."
+#~ msgstr ""
+#~ "Válassza ki, hogy bekapcsolja-e az automatikus görgetést az alkalmazás "
+#~ "listában."
+
+#~ msgid "Choose whether or not bookmarks are indexed in the menu."
+#~ msgstr "Válassza ki, hogy a könyvjelzők legyenek-e kereshetőek a menüben."
+
+#~ msgid "Choose whether or not to show bookmarks and places in the menu."
+#~ msgstr ""
+#~ "Válassza ki, hogy mutassa-e a könyvjelzőket és a helyeket a menüben."
+
+#~ msgid "Choose whether or not to show icons on applications."
+#~ msgstr ""
+#~ "Válassza ki, hogy bekapcsolja-e az ikonok megjelenítését az "
+#~ "alkalmazásokban."
+
+#~ msgid "Choose whether or not to show icons on categories."
+#~ msgstr ""
+#~ "Válassza ki, hogy bekapcsolja-e az ikonok megjelenítését a kategóriáknál."
+
+#~ msgid ""
+#~ "Choose whether or not to show the application description on the "
+#~ "application buttons."
+#~ msgstr ""
+#~ "Válassza ki, hogy bekapcsolja-e az alkalmazás leírások megjelenítését a "
+#~ "gombokon."
+
+#~ msgid "Please provide your password to uninstall this application"
+#~ msgstr "Adja meg a jelszavát az alkalmazás eltávolításához"
+
+#~ msgid "Enable filesystem path entry in search box"
+#~ msgstr "Fájlrendszer elérési út használatának engedélyezése a keresőmezőben"
+
+#~ msgid "Allows path entry in the menu search box."
+#~ msgstr "Elérési út írható a menü keresőmezőjébe."
+
+#~ msgid "Category first seen when the menu is opened"
+#~ msgstr "Menü megnyitásakor megjelenítendő kategória"
