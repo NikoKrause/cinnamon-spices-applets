@@ -136,8 +136,9 @@ def populate_translation_matrix():
     #% for UUID
     for uuid in os.listdir(REPO_FOLDER):
         #% show progressbar in terminal
-        prog_iter += 1
-        terminal_progressbar_update(prog_iter, prog_total)
+        if len(sys.argv) != 2 or sys.argv[1] != "--quiet":
+            prog_iter += 1
+            terminal_progressbar_update(prog_iter, prog_total)
 
         #% ignore files and hidden dirs
         if uuid.startswith('.') or not os.path.isdir(os.path.join(REPO_FOLDER, uuid)):
